@@ -21,6 +21,11 @@
  */
 int main(int argc, char** argv) {
 
+    Arvore * tree;
+    
+    
+    
+    
     return 0;
 }
 

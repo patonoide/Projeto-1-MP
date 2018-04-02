@@ -1,7 +1,7 @@
 struct arv {
     struct arv*dir;
     struct arv * esq;
-    int info;
+    char * info;
 };
 typedef struct arv Arvore;
 

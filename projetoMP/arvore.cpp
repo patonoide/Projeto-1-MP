@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "../single_include/catch.hpp"
+#include <string.h>
 
 Arvore * treeVazia() {
     return NULL;
@@ -18,9 +19,10 @@ Arvore * cria(int valor, Arvore * sae, Arvore * sad) {
 }
  */
 
-Arvore * insere(Arvore * a, int valor) {
+Arvore * insere(Arvore * a, char * valor) {
     if (a == NULL) {
         a = (Arvore *) malloc(sizeof (Arvore));
+
         a->info = valor;
         a->dir = NULL;
         a->esq = NULL;
@@ -36,14 +38,14 @@ Arvore * insere(Arvore * a, int valor) {
     return a;
 }
 
-Arvore * excluir(Arvore * a, int valor) {
+Arvore * excluir(Arvore * a, char * valor) {
     if (a == NULL) { //vazia
         return NULL;
     } else {
-        if (valor < a->info) { //exclui sae
+        if (a->esq != NULL) { //exclui sae
             a->esq = excluir(a->esq, valor);
         } else {
-            if (valor > a->info) { // exclui sad
+            if (a->dir != NULL) { // exclui sad
                 a->dir = excluir(a->dir, valor);
             } else {
                 if (a->esq == NULL && a->dir == NULL) { //não tem filhos 
@@ -65,7 +67,8 @@ Arvore * excluir(Arvore * a, int valor) {
                                 temp = temp->dir;
                             }
                             a->info = temp->info;
-                            temp->info = valor;
+                           
+                            strcpy(valor , temp->info);
                             a->esq = excluir(a->esq, valor);
                         }
                     }
@@ -76,45 +79,9 @@ Arvore * excluir(Arvore * a, int valor) {
     return a;
 }
 
-void preOrdem(Arvore* a) {
-    if(a==NULL){
-        printf("<>");
-    }
-    if (a != NULL) {
-        printf("<%i", a->info);
-        preOrdem(a->esq);
 
-        preOrdem(a->dir);
-        printf(">");
-    }
-}
 
-void inOrdem(Arvore* a) {
-    if(a==NULL){
-        printf("<>");
-    }
-    if (a != NULL) {
 
-        inOrdem(a->esq);
-        printf("<%i", a->info);
-        inOrdem(a->dir);
-        printf(">");
-    }
-}
-
-void posOrdem(Arvore* a) {
-    if(a==NULL){
-        printf("<>");
-    }
-    if (a != NULL) {
-
-        posOrdem(a->esq);
-        printf(">");
-        posOrdem(a->dir);
-        
-        printf("<%i", a->info);
-    }
-}
 
 Arvore * libera(Arvore *a) {
     if (a == NULL) {
@@ -142,14 +109,3 @@ int max(int a, int b) {
     }
 }
 
-Arvore* busca(Arvore* a, int valor) {
-    if (a == NULL) {
-        return NULL;
-    } else if (a->info > valor) {
-        return busca(a->esq, valor);
-    } else if (a->info < valor) {
-        return busca(a->dir, valor);
-    } else {
-        return a;
-    }
-}
