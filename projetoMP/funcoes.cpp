@@ -7,26 +7,32 @@
 #include "cabecalho.h"          
 #include <stdio.h>
 #include <stdlib.h>
-#include "../single_include/catch.hpp"
 
 
-//a principio ela vai ler o arquivo txt, montar a arvore e retornar o ponteiro dela
+
+
 
 Arvore * iniciarArvore() {
     FILE * principal;
     int tamanho; //tamanho da arvore
     Arvore * tree;
+    Arvore * raiz = NULL;
     tree = treeVazia();
-    char palavra [255];
+    char   palavra [255];
+    
     int estado = 1;
     if ((principal = fopen("entrada.txt", "rt")) == NULL) {
         printf("Deu erro");
     }
     do {
-        if (fscanf(principal,)) {
+        if ((fscanf(principal, "%c", palavra)) == EOF) {
             estado = 1;
+        } else if ( raiz == NULL) {
+            raiz = insere(raiz, palavra);
+        } else {
+
         }
-        
+
 
 
 
