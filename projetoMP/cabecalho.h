@@ -1,6 +1,3 @@
-
-#include "../single_include/catch.hpp"
-
 struct arv {
     struct arv*dir;
     struct arv * esq;
@@ -10,12 +7,12 @@ typedef struct arv Arvore;
 
 
 Arvore * treeVazia();
-Arvore * insere(Arvore * a, char * valor);
-Arvore * excluir(Arvore * a, char * valor);
+Arvore * insere(Arvore * a, int valor);
+Arvore * excluir(Arvore * a, int valor);
 void preOrdem(Arvore* a);
 void inOrdem(Arvore* a);
 void posOrdem(Arvore* a);
 Arvore * libera(Arvore *a);
 int altura(Arvore * a);
 int max(int a, int b);
-Arvore* busca(Arvore* a, char * valor);
+Arvore* busca(Arvore* a, int valor);
