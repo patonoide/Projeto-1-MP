@@ -9,6 +9,9 @@ struct arv {
 typedef struct arv Arvore;
 
 
+
+int salvarArvore();
+Arvore * iniciarArvore();
 Arvore * treeVazia();
 Arvore * insere(Arvore * a, char * valor);
 Arvore * excluir(Arvore * a, char * valor);

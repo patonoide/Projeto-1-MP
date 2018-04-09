@@ -8,18 +8,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
-
-
-
 Arvore * iniciarArvore() {
     FILE * principal;
-    int tamanho; //tamanho da arvore
+   
     Arvore * tree;
     Arvore * raiz = NULL;
     tree = treeVazia();
-    char   palavra [255];
-    
+    char palavra [255];
+
     int estado = 1;
     if ((principal = fopen("entrada.txt", "rt")) == NULL) {
         printf("Deu erro");
@@ -27,10 +23,10 @@ Arvore * iniciarArvore() {
     do {
         if ((fscanf(principal, "%c", palavra)) == EOF) {
             estado = 1;
-        } else if ( raiz == NULL) {
+        } else if (raiz == NULL) {
             raiz = insere(raiz, palavra);
         } else {
-
+            tree = insere(raiz, palavra);
         }
 
 
@@ -38,8 +34,13 @@ Arvore * iniciarArvore() {
 
     } while (estado != 1);
 
-
+    return raiz;
 
 }
 
+int salvarArvore() {
+    
+    
+    return true;
+}
 

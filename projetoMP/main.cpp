@@ -23,8 +23,8 @@ int main(int argc, char** argv) {
 
     Arvore * tree;
     
-    
-    
+     REQUIRE( iniciarArvore() == NULL );
+     REQUIRE( salvarArvore() == 1 );
     
     return 0;
 }
