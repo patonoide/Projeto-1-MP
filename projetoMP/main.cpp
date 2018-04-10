@@ -14,7 +14,7 @@
 #include <cstdlib>
 #include "cabecalho.h"
 #include "../single_include/catch.hpp"
-
+#define CATCH_CONFIG_MAIN
 
 /*
  * 
@@ -23,8 +23,7 @@ int main(int argc, char** argv) {
 
     Arvore * tree;
     
-     REQUIRE( iniciarArvore() == NULL );
-     REQUIRE( salvarArvore() == 1 );
+     
     
     return 0;
 }

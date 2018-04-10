@@ -16,11 +16,15 @@
 #define CATCH_CONFIG_MAIN
 
 #include "cabecalho.h"
+
 /*
  * Simple C++ Test Suite
  */
 
-TEST_CASE( "Factorials are computed", "[factorial]" ) {
-    REQUIRE( iniciarArvore() == NULL );
-   
+TEST_CASE("Factorials are computed", "[factorial]") {
+    REQUIRE(iniciarArvore() == NULL);
+    REQUIRE(salvarArvore() == 1);
+    REQUIRE(iniciarJogo() == 0);
+    REQUIRE(menuJogo() == 0);
+
 }
