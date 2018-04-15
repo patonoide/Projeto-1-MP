@@ -1,17 +1,22 @@
 
 #include "../single_include/catch.hpp"
 
-struct arv {
-    struct arv*dir;
-    struct arv * esq;
-    char * info;
+struct tree {
+  
+    struct tree * pai;
+    struct tree*dir;
+    struct tree * esq;
+    char    info[255];
+    int valor;
+    
 };
-typedef struct arv Arvore;
+typedef struct tree Arvore;
 
 
-
-int salvarArvore();
-Arvore * iniciarArvore();
+Arvore * insere(Arvore * a, int valor, char * palavra);
+Arvore * iniciarArvore(Arvore * tree);
+Arvore * salvarArvore(Arvore * a) ;
+Arvore * iniciarJogo(Arvore * a) ;
 Arvore * treeVazia();
 Arvore * insere(Arvore * a, char * valor);
 Arvore * excluir(Arvore * a, char * valor);
@@ -22,3 +27,4 @@ Arvore * libera(Arvore *a);
 int altura(Arvore * a);
 int max(int a, int b);
 Arvore* busca(Arvore* a, char * valor);
+void menuJogo();

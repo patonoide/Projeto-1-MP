@@ -1,0 +1,224 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - coverage.info - FINAL/arvore.cpp</title>
+  <link rel="stylesheet" type="text/css" href="../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../index.html">top level</a> - <a href="index.html">FINAL</a> - arvore.cpp<span style="font-size: 80%;"> (source / <a href="arvore.cpp.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">coverage.info</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">0</td>
+            <td class="headerCovTableEntry">77</td>
+            <td class="headerCovTableEntryLo">0.0 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2018-04-14 01:53:28</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">0</td>
+            <td class="headerCovTableEntry">9</td>
+            <td class="headerCovTableEntryLo">0.0 %</td>
+          </tr>
+          <tr><td><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">          Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>            : </a>
+<span class="lineNum">       2 </span>            : #include &quot;cabecalho.h&quot;          
+<span class="lineNum">       3 </span>            : #include &lt;stdio.h&gt;
+<span class="lineNum">       4 </span>            : #include &lt;stdlib.h&gt;
+<span class="lineNum">       5 </span>            : #include &quot;../lib/catch.hpp&quot;
+<span class="lineNum">       6 </span>            : #include &lt;string.h&gt;
+<span class="lineNum">       7 </span>            : #include &quot;arvore.h&quot;
+<a name="8"><span class="lineNum">       8 </span>            : </a>
+<span class="lineNum">       9 </span>            : 
+<span class="lineNum">      10 </span><span class="lineNoCov">          0 : Arvore * treeVazia() {</span>
+<span class="lineNum">      11 </span><span class="lineNoCov">          0 :     return NULL;</span>
+<span class="lineNum">      12 </span>            : }
+<span class="lineNum">      13 </span>            : 
+<span class="lineNum">      14 </span>            : /*
+<span class="lineNum">      15 </span>            : Arvore * cria(int valor, Arvore * sae, Arvore * sad) {
+<span class="lineNum">      16 </span>            :     Arvore * p = (Arvore *) malloc(sizeof (Arvore));
+<span class="lineNum">      17 </span>            :     p-&gt;info = valor;
+<span class="lineNum">      18 </span>            :     p-&gt;esq = sae;
+<span class="lineNum">      19 </span>            :     p-&gt;dir = sad;
+<span class="lineNum">      20 </span>            :     return p;
+<span class="lineNum">      21 </span>            : }
+<a name="22"><span class="lineNum">      22 </span>            :  */</a>
+<span class="lineNum">      23 </span>            : 
+<span class="lineNum">      24 </span><span class="lineNoCov">          0 : Arvore * insere(Arvore * a, char * palavra) {</span>
+<span class="lineNum">      25 </span><span class="lineNoCov">          0 :     if (a == NULL) {</span>
+<span class="lineNum">      26 </span><span class="lineNoCov">          0 :         a = (Arvore *) malloc(sizeof (Arvore));</span>
+<span class="lineNum">      27 </span><span class="lineNoCov">          0 :         strcpy(a-&gt;info, palavra);</span>
+<span class="lineNum">      28 </span><span class="lineNoCov">          0 :         a-&gt;dir = NULL;</span>
+<span class="lineNum">      29 </span><span class="lineNoCov">          0 :         a-&gt;esq = NULL;</span>
+<span class="lineNum">      30 </span>            :     } else {
+<span class="lineNum">      31 </span><span class="lineNoCov">          0 :         if ( a-&gt;esq!=NULL) {</span>
+<span class="lineNum">      32 </span>            : 
+<span class="lineNum">      33 </span><span class="lineNoCov">          0 :             a-&gt;esq = insere(a-&gt;esq, palavra);</span>
+<span class="lineNum">      34 </span>            :         } else {
+<span class="lineNum">      35 </span>            : 
+<span class="lineNum">      36 </span><span class="lineNoCov">          0 :             a-&gt;dir = insere(a-&gt;dir, palavra);</span>
+<span class="lineNum">      37 </span>            :         }
+<span class="lineNum">      38 </span>            :     }
+<span class="lineNum">      39 </span><span class="lineNoCov">          0 :     return a;</span>
+<a name="40"><span class="lineNum">      40 </span>            : }</a>
+<span class="lineNum">      41 </span>            : 
+<span class="lineNum">      42 </span><span class="lineNoCov">          0 : Arvore * excluir(Arvore * a, char * valor) {</span>
+<span class="lineNum">      43 </span><span class="lineNoCov">          0 :     if (a == NULL) { //vazia</span>
+<span class="lineNum">      44 </span><span class="lineNoCov">          0 :         return NULL;</span>
+<span class="lineNum">      45 </span>            :     } else {
+<span class="lineNum">      46 </span><span class="lineNoCov">          0 :         if (a-&gt;esq != NULL) { //exclui sae</span>
+<span class="lineNum">      47 </span><span class="lineNoCov">          0 :             a-&gt;esq = excluir(a-&gt;esq, valor);</span>
+<span class="lineNum">      48 </span>            :         } else {
+<span class="lineNum">      49 </span><span class="lineNoCov">          0 :             if (a-&gt;dir != NULL) { // exclui sad</span>
+<span class="lineNum">      50 </span><span class="lineNoCov">          0 :                 a-&gt;dir = excluir(a-&gt;dir, valor);</span>
+<span class="lineNum">      51 </span>            :             } else {
+<span class="lineNum">      52 </span><span class="lineNoCov">          0 :                 if (a-&gt;esq == NULL &amp;&amp; a-&gt;dir == NULL) { //não tem filhos </span>
+<span class="lineNum">      53 </span><span class="lineNoCov">          0 :                     free(a);</span>
+<span class="lineNum">      54 </span><span class="lineNoCov">          0 :                     return NULL;</span>
+<span class="lineNum">      55 </span>            :                 } else {
+<span class="lineNum">      56 </span><span class="lineNoCov">          0 :                     if (a-&gt;dir == NULL) { //não tem filho na direita</span>
+<span class="lineNum">      57 </span><span class="lineNoCov">          0 :                         Arvore * aux = a;</span>
+<span class="lineNum">      58 </span><span class="lineNoCov">          0 :                         a = a-&gt;esq; //ve se tem na esquerda</span>
+<span class="lineNum">      59 </span><span class="lineNoCov">          0 :                         free(aux);</span>
+<span class="lineNum">      60 </span>            :                     } else {
+<span class="lineNum">      61 </span><span class="lineNoCov">          0 :                         if (a-&gt;esq == NULL) { //não tem filho na esquerda</span>
+<span class="lineNum">      62 </span><span class="lineNoCov">          0 :                             Arvore * aux = a;</span>
+<span class="lineNum">      63 </span><span class="lineNoCov">          0 :                             a = a-&gt;dir; //ve se tem na direita</span>
+<span class="lineNum">      64 </span><span class="lineNoCov">          0 :                             free(aux);</span>
+<span class="lineNum">      65 </span>            :                         } else { //arvore tem dois filhos
+<span class="lineNum">      66 </span><span class="lineNoCov">          0 :                             Arvore * temp = a-&gt;esq;</span>
+<span class="lineNum">      67 </span><span class="lineNoCov">          0 :                             while (temp-&gt;dir != NULL) {</span>
+<span class="lineNum">      68 </span><span class="lineNoCov">          0 :                                 temp = temp-&gt;dir;</span>
+<span class="lineNum">      69 </span>            :                             }
+<span class="lineNum">      70 </span>            :                             //                            a-&gt;info = temp-&gt;info;
+<span class="lineNum">      71 </span>            : 
+<span class="lineNum">      72 </span><span class="lineNoCov">          0 :                             strcpy(valor, temp-&gt;info);</span>
+<span class="lineNum">      73 </span><span class="lineNoCov">          0 :                             a-&gt;esq = excluir(a-&gt;esq, valor);</span>
+<span class="lineNum">      74 </span>            :                         }
+<span class="lineNum">      75 </span>            :                     }
+<span class="lineNum">      76 </span>            :                 }
+<span class="lineNum">      77 </span>            :             }
+<span class="lineNum">      78 </span>            :         }
+<span class="lineNum">      79 </span>            :     }
+<span class="lineNum">      80 </span><span class="lineNoCov">          0 :     return a;</span>
+<a name="81"><span class="lineNum">      81 </span>            : }</a>
+<span class="lineNum">      82 </span>            : 
+<span class="lineNum">      83 </span><span class="lineNoCov">          0 : Arvore * libera(Arvore *a) {</span>
+<span class="lineNum">      84 </span><span class="lineNoCov">          0 :     if (a == NULL) {</span>
+<span class="lineNum">      85 </span><span class="lineNoCov">          0 :         libera(a-&gt;esq);</span>
+<span class="lineNum">      86 </span><span class="lineNoCov">          0 :         libera(a-&gt;dir);</span>
+<span class="lineNum">      87 </span><span class="lineNoCov">          0 :         free(a);</span>
+<span class="lineNum">      88 </span>            :     }
+<span class="lineNum">      89 </span><span class="lineNoCov">          0 :     return NULL;</span>
+<a name="90"><span class="lineNum">      90 </span>            : }</a>
+<span class="lineNum">      91 </span>            : 
+<span class="lineNum">      92 </span><span class="lineNoCov">          0 : int altura(Arvore * a) {</span>
+<span class="lineNum">      93 </span><span class="lineNoCov">          0 :     if (a == NULL) {</span>
+<span class="lineNum">      94 </span><span class="lineNoCov">          0 :         return -1;</span>
+<span class="lineNum">      95 </span>            : 
+<span class="lineNum">      96 </span>            :     } else {
+<span class="lineNum">      97 </span><span class="lineNoCov">          0 :         return 1 + max(altura(a-&gt;esq), altura(a-&gt;dir));</span>
+<span class="lineNum">      98 </span>            :     }
+<a name="99"><span class="lineNum">      99 </span>            : }</a>
+<span class="lineNum">     100 </span>            : 
+<span class="lineNum">     101 </span><span class="lineNoCov">          0 : int max(int a, int b) {</span>
+<span class="lineNum">     102 </span><span class="lineNoCov">          0 :     if (a &lt; b) {</span>
+<span class="lineNum">     103 </span><span class="lineNoCov">          0 :         return b;</span>
+<span class="lineNum">     104 </span>            :     } else {
+<span class="lineNum">     105 </span><span class="lineNoCov">          0 :         return a;</span>
+<a name="106"><span class="lineNum">     106 </span>            :     }</a>
+<span class="lineNum">     107 </span>            : }
+<span class="lineNum">     108 </span><span class="lineNoCov">          0 : void preOrdem(Arvore* a) {</span>
+<span class="lineNum">     109 </span><span class="lineNoCov">          0 :     if(a==NULL){</span>
+<span class="lineNum">     110 </span><span class="lineNoCov">          0 :         printf(&quot;&lt;&gt;&quot;);</span>
+<span class="lineNum">     111 </span>            :     }
+<span class="lineNum">     112 </span><span class="lineNoCov">          0 :     if (a != NULL) {</span>
+<span class="lineNum">     113 </span><span class="lineNoCov">          0 :         printf(&quot;&lt;%s&quot;, a-&gt;info);</span>
+<span class="lineNum">     114 </span><span class="lineNoCov">          0 :         preOrdem(a-&gt;esq);</span>
+<span class="lineNum">     115 </span>            : 
+<span class="lineNum">     116 </span><span class="lineNoCov">          0 :         preOrdem(a-&gt;dir);</span>
+<span class="lineNum">     117 </span><span class="lineNoCov">          0 :         printf(&quot;&gt;&quot;);</span>
+<span class="lineNum">     118 </span>            :     }
+<a name="119"><span class="lineNum">     119 </span><span class="lineNoCov">          0 : }</span></a>
+<span class="lineNum">     120 </span>            : 
+<span class="lineNum">     121 </span><span class="lineNoCov">          0 : void inOrdem(Arvore* a) {</span>
+<span class="lineNum">     122 </span><span class="lineNoCov">          0 :     if(a==NULL){</span>
+<span class="lineNum">     123 </span><span class="lineNoCov">          0 :         printf(&quot;&lt;&gt;&quot;);</span>
+<span class="lineNum">     124 </span>            :     }
+<span class="lineNum">     125 </span><span class="lineNoCov">          0 :     if (a != NULL) {</span>
+<span class="lineNum">     126 </span>            : 
+<span class="lineNum">     127 </span><span class="lineNoCov">          0 :         inOrdem(a-&gt;esq);</span>
+<span class="lineNum">     128 </span><span class="lineNoCov">          0 :         printf(&quot;&lt;%s&quot;, a-&gt;info);</span>
+<span class="lineNum">     129 </span><span class="lineNoCov">          0 :         inOrdem(a-&gt;dir);</span>
+<span class="lineNum">     130 </span><span class="lineNoCov">          0 :         printf(&quot;&gt;&quot;);</span>
+<span class="lineNum">     131 </span>            :     }
+<a name="132"><span class="lineNum">     132 </span><span class="lineNoCov">          0 : }</span></a>
+<span class="lineNum">     133 </span>            : 
+<span class="lineNum">     134 </span><span class="lineNoCov">          0 : void posOrdem(Arvore* a) {</span>
+<span class="lineNum">     135 </span><span class="lineNoCov">          0 :     if(a==NULL){</span>
+<span class="lineNum">     136 </span><span class="lineNoCov">          0 :         printf(&quot;&lt;&gt;&quot;);</span>
+<span class="lineNum">     137 </span>            :     }
+<span class="lineNum">     138 </span><span class="lineNoCov">          0 :     if (a != NULL) {</span>
+<span class="lineNum">     139 </span>            : 
+<span class="lineNum">     140 </span><span class="lineNoCov">          0 :         posOrdem(a-&gt;esq);</span>
+<span class="lineNum">     141 </span><span class="lineNoCov">          0 :         printf(&quot;&gt;&quot;);</span>
+<span class="lineNum">     142 </span><span class="lineNoCov">          0 :         posOrdem(a-&gt;dir);</span>
+<span class="lineNum">     143 </span>            :         
+<span class="lineNum">     144 </span><span class="lineNoCov">          0 :         printf(&quot;&lt;%s&quot;, a-&gt;info);</span>
+<span class="lineNum">     145 </span>            :     }
+<span class="lineNum">     146 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">     147 </span>            : 
+<span class="lineNum">     148 </span>            : 
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.13</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>

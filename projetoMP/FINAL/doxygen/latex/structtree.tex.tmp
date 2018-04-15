@@ -1,0 +1,29 @@
+\hypertarget{structtree}{}\section{tree Struct Reference}
+\label{structtree}\index{tree@{tree}}
+
+
+Collaboration diagram for tree\+:
+% FIG 0
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structtree_a892dc68ebc0fe35b6ca7ef618a48f40a}\label{structtree_a892dc68ebc0fe35b6ca7ef618a48f40a}} 
+struct \hyperlink{structtree}{tree} $\ast$ {\bfseries pai}
+\item 
+\mbox{\Hypertarget{structtree_a7e8772c10923b3b7abbe1bcf69605857}\label{structtree_a7e8772c10923b3b7abbe1bcf69605857}} 
+struct \hyperlink{structtree}{tree} $\ast$ {\bfseries dir}
+\item 
+\mbox{\Hypertarget{structtree_aed1a08ff52888fc196c29399e9f0f7e9}\label{structtree_aed1a08ff52888fc196c29399e9f0f7e9}} 
+struct \hyperlink{structtree}{tree} $\ast$ {\bfseries esq}
+\item 
+\mbox{\Hypertarget{structtree_a33363586fc94b74ed916c1a047b40c09}\label{structtree_a33363586fc94b74ed916c1a047b40c09}} 
+char {\bfseries info} \mbox{[}255\mbox{]}
+\item 
+\mbox{\Hypertarget{structtree_ab2137451cda4f3a42fb8de7085c1992c}\label{structtree_ab2137451cda4f3a42fb8de7085c1992c}} 
+int {\bfseries valor}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cabecalho.\+h\end{DoxyCompactItemize}
