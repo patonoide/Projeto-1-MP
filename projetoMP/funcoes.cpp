@@ -177,7 +177,7 @@ Arvore * iniciarArvore() {
 
 Arvore * salvarArvore(Arvore * tree) {
     FILE * principal;
-    char palavra [255];
+
 
     if ((principal = fopen("entrada.txt", "a")) == NULL) {
         printf("Deu erro");

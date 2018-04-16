@@ -1,0 +1,2218 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 9;}
+{\s50\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext51 List Continue 0;}
+{\s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext52 List Continue 1;}
+{\s52\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext53 List Continue 2;}
+{\s53\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext54 List Continue 3;}
+{\s54\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext55 List Continue 4;}
+{\s55\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext56 List Continue 5;}
+{\s56\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext57 List Continue 6;}
+{\s57\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext58 List Continue 7;}
+{\s58\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext59 List Continue 8;}
+{\s59\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext59 List Continue 9;}
+{\s60\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext61 DescContinue 0;}
+{\s61\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext62 DescContinue 1;}
+{\s62\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext63 DescContinue 2;}
+{\s63\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext64 DescContinue 3;}
+{\s64\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext65 DescContinue 4;}
+{\s65\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext66 DescContinue 5;}
+{\s66\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext67 DescContinue 6;}
+{\s67\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext68 DescContinue 7;}
+{\s68\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext69 DescContinue 8;}
+{\s69\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext69 DescContinue 9;}
+{\s70\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext81 LatexTOC 0;}
+{\s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext82 LatexTOC 1;}
+{\s72\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext83 LatexTOC 2;}
+{\s73\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext84 LatexTOC 3;}
+{\s74\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext85 LatexTOC 4;}
+{\s75\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext86 LatexTOC 5;}
+{\s76\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext87 LatexTOC 6;}
+{\s77\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext88 LatexTOC 7;}
+{\s78\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext89 LatexTOC 8;}
+{\s79\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext89 LatexTOC 9;}
+{\s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext81 \sautoupd List Bullet 0;}
+{\s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid \sbasedon0 \snext82 \sautoupd List Bullet 1;}
+{\s82\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls3\adjustright \fs20\cgrid \sbasedon0 \snext83 \sautoupd List Bullet 2;}
+{\s83\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls4\adjustright \fs20\cgrid \sbasedon0 \snext84 \sautoupd List Bullet 3;}
+{\s84\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls5\adjustright \fs20\cgrid \sbasedon0 \snext85 \sautoupd List Bullet 4;}
+{\s85\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls6\adjustright \fs20\cgrid \sbasedon0 \snext86 \sautoupd List Bullet 5;}
+{\s86\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls7\adjustright \fs20\cgrid \sbasedon0 \snext87 \sautoupd List Bullet 6;}
+{\s87\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls8\adjustright \fs20\cgrid \sbasedon0 \snext88 \sautoupd List Bullet 7;}
+{\s88\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls9\adjustright \fs20\cgrid \sbasedon0 \snext89 \sautoupd List Bullet 8;}
+{\s89\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls10\adjustright \fs20\cgrid \sbasedon0 \snext89 \sautoupd List Bullet 9;}
+{\s90\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext91 \sautoupd List Enum 0;}
+{\s91\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext92 \sautoupd List Enum 1;}
+{\s92\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext93 \sautoupd List Enum 2;}
+{\s93\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext94 \sautoupd List Enum 3;}
+{\s94\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext95 \sautoupd List Enum 4;}
+{\s95\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext96 \sautoupd List Enum 5;}
+{\s96\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext96 \sautoupd List Enum 5;}
+{\s97\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext98 \sautoupd List Enum 7;}
+{\s98\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext99 \sautoupd List Enum 8;}
+{\s99\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext99 \sautoupd List Enum 9;}
+}
+{\info 
+{\title {\comment ProjetoMP  {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+1.0 \par
+}}ProjetoMP}
+{\comment Gerado porDoxgyen. }
+{\creatim \yr2018\mo4\dy15\hr19\min31\sec19}
+}\pard\plain 
+\sectd\pgnlcrm
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\vertalc\qc\par\par\par\par\par\par\par
+\pard\plain \s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid 
+{\field\fldedit {\*\fldinst TITLE \\*MERGEFORMAT}{\fldrslt ProjetoMP}}\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\par
+\par\par\par\par\par\par\par\par\par\par\par\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+{\field\fldedit {\*\fldinst AUTHOR \\*MERGEFORMAT}{\fldrslt AUTHOR}}\par
+Vers\'E3o 1.0\par{\field\fldedit {\*\fldinst CREATEDATE \\*MERGEFORMAT}{\fldrslt Domingo, 15 de Abril de 2018 }}\par
+\page\page\vertalt
+\pard\plain 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \'CDndice\par
+\pard\plain \par
+{\field\fldedit {\*\fldinst TOC \\f \\*MERGEFORMAT}{\fldrslt Table of contents}}\par
+\pard\plain 
+\sect \sbkpage \pgndec \pgnrestart
+\sect \sectd \sbknone
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\'CDndice dos componentes\par \pard\plain 
+{\tc \v \'CDndice dos componentes}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Lista de componentes\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Lista de classes, estruturas, uni\'F5es e interfaces com uma breve descri\'E7\'E3o:}
+{
+\par
+\pard\plain \s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b tree} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACB \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\'CDndice dos ficheiros\par \pard\plain 
+{\tc \v \'CDndice dos ficheiros}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Lista de ficheiros\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Lista de todos os ficheiros com uma breve descri\'E7\'E3o:}
+{
+\par
+\pard\plain \s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b arvore.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAA \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b arvore.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAK \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b cabecalho.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAW \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b funcoes.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABN \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b main.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABS \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b testaArvore.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABV \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b testeJogo.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABY \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Documenta\'E7\'E3o da classe{\tc \v Documenta\'E7\'E3o da classe}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Refer\'EAncia \'E0 estrutura tree\par \pard\plain 
+{\tc\tcl2 \v tree}
+{\xe \v tree}
+{\bkmkstart AAAAAAAACB}
+{\bkmkend AAAAAAAACB}
+\par
+{
+{\f2 #include <cabecalho.h>}}\par
+Diagrama de colabora\'E7\'E3o para tree:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "structtree__coll__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Atributos P\'FAblicos\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b tree} * {\b pai}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b tree} * {\b dir}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b tree} * {\b esq}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char {\b info} [255]\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b valor}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documenta\'E7\'E3o dos dados membro\par
+\pard\plain 
+{\xe \v dir\:tree}
+{\xe \v tree\:dir}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+struct {\b tree}* tree::dir}}
+\par
+{\bkmkstart AAAAAAAACC}
+{\bkmkend AAAAAAAACC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v esq\:tree}
+{\xe \v tree\:esq}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+struct {\b tree}* tree::esq}}
+\par
+{\bkmkstart AAAAAAAACD}
+{\bkmkend AAAAAAAACD}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v info\:tree}
+{\xe \v tree\:info}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char tree::info[255]}}
+\par
+{\bkmkstart AAAAAAAACE}
+{\bkmkend AAAAAAAACE}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v pai\:tree}
+{\xe \v tree\:pai}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+struct {\b tree}* tree::pai}}
+\par
+{\bkmkstart AAAAAAAACF}
+{\bkmkend AAAAAAAACF}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v valor\:tree}
+{\xe \v tree\:valor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int tree::valor}}
+\par
+{\bkmkstart AAAAAAAACG}
+{\bkmkend AAAAAAAACG}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+A documenta\'E7\'E3o para esta estrutura foi gerada a partir do seguinte ficheiro:{\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\b cabecalho.h}\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Documenta\'E7\'E3o do ficheiro{\tc \v Documenta\'E7\'E3o do ficheiro}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Refer\'EAncia ao ficheiro arvore.cpp\par \pard\plain 
+{\tc\tcl2 \v arvore.cpp}
+{\xe \v arvore.cpp}
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "cabecalho.h"}\par
+{\f2 #include <stdio.h>}\par
+{\f2 #include <stdlib.h>}\par
+{\f2 #include "../lib/catch.hpp"}\par
+{\f2 #include <string.h>}\par
+{\f2 #include "arvore.h"}\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Diagrama de depend\'EAncias de inclus\'E3o para arvore.cpp:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "arvore_8cpp__incl.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Fun\'E7\'F5es\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Arvore} * {\b treeVazia} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Arvore} * {\b insere} ({\b Arvore} *a, char *palavra)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Arvore} * {\b excluir} ({\b Arvore} *a, char *valor)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Arvore} * {\b libera} ({\b Arvore} *a)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b altura} ({\b Arvore} *a)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b max} (int a, int b)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b preOrdem} ({\b Arvore} *a)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b inOrdem} ({\b Arvore} *a)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b posOrdem} ({\b Arvore} *a)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documenta\'E7\'E3o das fun\'E7\'F5es\par
+\pard\plain 
+{\xe \v altura\:arvore.cpp}
+{\xe \v arvore.cpp\:altura}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int altura ({\b Arvore} *  {\i a})}}
+\par
+{\bkmkstart AAAAAAAAAB}
+{\bkmkend AAAAAAAAAB}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid    92                        \{\par
+   93     if (a == NULL) \{\par
+   94         return -1;\par
+   95 \par
+   96     \} else \{\par
+   97         return 1 + max(altura(a->esq), altura(a->dir));\par
+   98     \}\par
+   99 \}\par
+}
+}
+{\xe \v excluir\:arvore.cpp}
+{\xe \v arvore.cpp\:excluir}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Arvore}* excluir ({\b Arvore} *  {\i a}, char *  {\i valor})}}
+\par
+{\bkmkstart AAAAAAAAAC}
+{\bkmkend AAAAAAAAAC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid    42                                            \{\par
+   43     if (a == NULL) \{ //vazia\par
+   44         return NULL;\par
+   45     \} else \{\par
+   46         if (a->esq != NULL) \{ //exclui sae\par
+   47             a->esq = excluir(a->esq, valor);\par
+   48         \} else \{\par
+   49             if (a->dir != NULL) \{ // exclui sad\par
+   50                 a->dir = excluir(a->dir, valor);\par
+   51             \} else \{\par
+   52                 if (a->esq == NULL && a->dir == NULL) \{ //n\'E3o tem filhos \par
+   53                     free(a);\par
+   54                     return NULL;\par
+   55                 \} else \{\par
+   56                     if (a->dir == NULL) \{ //n\'E3o tem filho na direita\par
+   57                         Arvore * aux = a;\par
+   58                         a = a->esq; //ve se tem na esquerda\par
+   59                         free(aux);\par
+   60                     \} else \{\par
+   61                         if (a->esq == NULL) \{ //n\'E3o tem filho na esquerda\par
+   62                             Arvore * aux = a;\par
+   63                             a = a->dir; //ve se tem na direita\par
+   64                             free(aux);\par
+   65                         \} else \{ //arvore tem dois filhos\par
+   66                             Arvore * temp = a->esq;\par
+   67                             while (temp->dir != NULL) \{\par
+   68                                 temp = temp->dir;\par
+   69                             \}\par
+   70                             //                            a->info = temp->info;\par
+   71 \par
+   72                             strcpy(valor, temp->info);\par
+   73                             a->esq = excluir(a->esq, valor);\par
+   74                         \}\par
+   75                     \}\par
+   76                 \}\par
+   77             \}\par
+   78         \}\par
+   79     \}\par
+   80     return a;\par
+   81 \}\par
+}
+}
+{\xe \v inOrdem\:arvore.cpp}
+{\xe \v arvore.cpp\:inOrdem}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void inOrdem ({\b Arvore} *  {\i a})}}
+\par
+{\bkmkstart AAAAAAAAAD}
+{\bkmkend AAAAAAAAAD}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid   121                         \{\par
+  122     if(a==NULL)\{\par
+  123         printf("<>");\par
+  124     \}\par
+  125     if (a != NULL) \{\par
+  126 \par
+  127         inOrdem(a->esq);\par
+  128         printf("<%s", a->info);\par
+  129         inOrdem(a->dir);\par
+  130         printf(">");\par
+  131     \}\par
+  132 \}\par
+}
+}
+{\xe \v insere\:arvore.cpp}
+{\xe \v arvore.cpp\:insere}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Arvore}* insere ({\b Arvore} *  {\i a}, char *  {\i palavra})}}
+\par
+{\bkmkstart AAAAAAAAAE}
+{\bkmkend AAAAAAAAAE}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid    24                                             \{\par
+   25     if (a == NULL) \{\par
+   26         a = (Arvore *) malloc(sizeof (Arvore));\par
+   27         strcpy(a->info, palavra);\par
+   28         a->dir = NULL;\par
+   29         a->esq = NULL;\par
+   30     \} else \{\par
+   31         if ( a->esq!=NULL) \{\par
+   32 \par
+   33             a->esq = insere(a->esq, palavra);\par
+   34         \} else \{\par
+   35 \par
+   36             a->dir = insere(a->dir, palavra);\par
+   37         \}\par
+   38     \}\par
+   39     return a;\par
+   40 \}\par
+}
+}
+{\xe \v libera\:arvore.cpp}
+{\xe \v arvore.cpp\:libera}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Arvore}* libera ({\b Arvore} *  {\i a})}}
+\par
+{\bkmkstart AAAAAAAAAF}
+{\bkmkend AAAAAAAAAF}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid    83                            \{\par
+   84     if (a == NULL) \{\par
+   85         libera(a->esq);\par
+   86         libera(a->dir);\par
+   87         free(a);\par
+   88     \}\par
+   89     return NULL;\par
+   90 \}\par
+}
+}
+{\xe \v max\:arvore.cpp}
+{\xe \v arvore.cpp\:max}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int max (int  {\i a}, int  {\i b})}}
+\par
+{\bkmkstart AAAAAAAAAG}
+{\bkmkend AAAAAAAAAG}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid   101                       \{\par
+  102     if (a < b) \{\par
+  103         return b;\par
+  104     \} else \{\par
+  105         return a;\par
+  106     \}\par
+  107 \}\par
+}
+}
+{\xe \v posOrdem\:arvore.cpp}
+{\xe \v arvore.cpp\:posOrdem}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void posOrdem ({\b Arvore} *  {\i a})}}
+\par
+{\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid   134                          \{\par
+  135     if(a==NULL)\{\par
+  136         printf("<>");\par
+  137     \}\par
+  138     if (a != NULL) \{\par
+  139 \par
+  140         posOrdem(a->esq);\par
+  141         printf(">");\par
+  142         posOrdem(a->dir);\par
+  143         \par
+  144         printf("<%s", a->info);\par
+  145     \}\par
+  146 \}\par
+}
+}
+{\xe \v preOrdem\:arvore.cpp}
+{\xe \v arvore.cpp\:preOrdem}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void preOrdem ({\b Arvore} *  {\i a})}}
+\par
+{\bkmkstart AAAAAAAAAI}
+{\bkmkend AAAAAAAAAI}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid   108                          \{\par
+  109     if(a==NULL)\{\par
+  110         printf("<>");\par
+  111     \}\par
+  112     if (a != NULL) \{\par
+  113         printf("<%s", a->info);\par
+  114         preOrdem(a->esq);\par
+  115 \par
+  116         preOrdem(a->dir);\par
+  117         printf(">");\par
+  118     \}\par
+  119 \}\par
+}
+}
+{\xe \v treeVazia\:arvore.cpp}
+{\xe \v arvore.cpp\:treeVazia}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Arvore}* treeVazia ()}}
+\par
+{\bkmkstart AAAAAAAAAJ}
+{\bkmkend AAAAAAAAAJ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid    10                      \{\par
+   11     return NULL;\par
+   12 \}\par
+}
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Refer\'EAncia ao ficheiro arvore.h\par \pard\plain 
+{\tc\tcl2 \v arvore.h}
+{\xe \v arvore.h}
+{\bkmkstart AAAAAAAAAK}
+{\bkmkend AAAAAAAAAK}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Este grafo mostra quais s\'E3o os ficheiros que incluem directamente ou indirectamente este ficheiro:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "arvore_8h__dep__incl.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Fun\'E7\'F5es\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Arvore} * {\b treeVazia} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Arvore} * {\b insere} ({\b Arvore} *a, char *valor)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Arvore} * {\b excluir} ({\b Arvore} *a, char *valor)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b preOrdem} ({\b Arvore} *a)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b inOrdem} ({\b Arvore} *a)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b posOrdem} ({\b Arvore} *a)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Arvore} * {\b libera} ({\b Arvore} *a)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b altura} ({\b Arvore} *a)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b max} (int a, int b)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Arvore} * {\b busca} ({\b Arvore} *a, char *valor)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b menuJogo} ()\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documenta\'E7\'E3o das fun\'E7\'F5es\par
+\pard\plain 
+{\xe \v altura\:arvore.h}
+{\xe \v arvore.h\:altura}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int altura ({\b Arvore} *  {\i a})}}
+\par
+{\bkmkstart AAAAAAAAAL}
+{\bkmkend AAAAAAAAAL}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid    92                        \{\par
+   93     if (a == NULL) \{\par
+   94         return -1;\par
+   95 \par
+   96     \} else \{\par
+   97         return 1 + max(altura(a->esq), altura(a->dir));\par
+   98     \}\par
+   99 \}\par
+}
+}
+{\xe \v busca\:arvore.h}
+{\xe \v arvore.h\:busca}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Arvore}* busca ({\b Arvore} *  {\i a}, char *  {\i valor})}}
+\par
+{\bkmkstart AAAAAAAAAM}
+{\bkmkend AAAAAAAAAM}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v excluir\:arvore.h}
+{\xe \v arvore.h\:excluir}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Arvore}* excluir ({\b Arvore} *  {\i a}, char *  {\i valor})}}
+\par
+{\bkmkstart AAAAAAAAAN}
+{\bkmkend AAAAAAAAAN}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid    42                                            \{\par
+   43     if (a == NULL) \{ //vazia\par
+   44         return NULL;\par
+   45     \} else \{\par
+   46         if (a->esq != NULL) \{ //exclui sae\par
+   47             a->esq = excluir(a->esq, valor);\par
+   48         \} else \{\par
+   49             if (a->dir != NULL) \{ // exclui sad\par
+   50                 a->dir = excluir(a->dir, valor);\par
+   51             \} else \{\par
+   52                 if (a->esq == NULL && a->dir == NULL) \{ //n\'E3o tem filhos \par
+   53                     free(a);\par
+   54                     return NULL;\par
+   55                 \} else \{\par
+   56                     if (a->dir == NULL) \{ //n\'E3o tem filho na direita\par
+   57                         Arvore * aux = a;\par
+   58                         a = a->esq; //ve se tem na esquerda\par
+   59                         free(aux);\par
+   60                     \} else \{\par
+   61                         if (a->esq == NULL) \{ //n\'E3o tem filho na esquerda\par
+   62                             Arvore * aux = a;\par
+   63                             a = a->dir; //ve se tem na direita\par
+   64                             free(aux);\par
+   65                         \} else \{ //arvore tem dois filhos\par
+   66                             Arvore * temp = a->esq;\par
+   67                             while (temp->dir != NULL) \{\par
+   68                                 temp = temp->dir;\par
+   69                             \}\par
+   70                             //                            a->info = temp->info;\par
+   71 \par
+   72                             strcpy(valor, temp->info);\par
+   73                             a->esq = excluir(a->esq, valor);\par
+   74                         \}\par
+   75                     \}\par
+   76                 \}\par
+   77             \}\par
+   78         \}\par
+   79     \}\par
+   80     return a;\par
+   81 \}\par
+}
+}
+{\xe \v inOrdem\:arvore.h}
+{\xe \v arvore.h\:inOrdem}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void inOrdem ({\b Arvore} *  {\i a})}}
+\par
+{\bkmkstart AAAAAAAAAO}
+{\bkmkend AAAAAAAAAO}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid   121                         \{\par
+  122     if(a==NULL)\{\par
+  123         printf("<>");\par
+  124     \}\par
+  125     if (a != NULL) \{\par
+  126 \par
+  127         inOrdem(a->esq);\par
+  128         printf("<%s", a->info);\par
+  129         inOrdem(a->dir);\par
+  130         printf(">");\par
+  131     \}\par
+  132 \}\par
+}
+}
+{\xe \v insere\:arvore.h}
+{\xe \v arvore.h\:insere}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Arvore}* insere ({\b Arvore} *  {\i a}, char *  {\i valor})}}
+\par
+{\bkmkstart AAAAAAAAAP}
+{\bkmkend AAAAAAAAAP}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid    24                                             \{\par
+   25     if (a == NULL) \{\par
+   26         a = (Arvore *) malloc(sizeof (Arvore));\par
+   27         strcpy(a->info, palavra);\par
+   28         a->dir = NULL;\par
+   29         a->esq = NULL;\par
+   30     \} else \{\par
+   31         if ( a->esq!=NULL) \{\par
+   32 \par
+   33             a->esq = insere(a->esq, palavra);\par
+   34         \} else \{\par
+   35 \par
+   36             a->dir = insere(a->dir, palavra);\par
+   37         \}\par
+   38     \}\par
+   39     return a;\par
+   40 \}\par
+}
+}
+{\xe \v libera\:arvore.h}
+{\xe \v arvore.h\:libera}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Arvore}* libera ({\b Arvore} *  {\i a})}}
+\par
+{\bkmkstart AAAAAAAAAQ}
+{\bkmkend AAAAAAAAAQ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid    83                            \{\par
+   84     if (a == NULL) \{\par
+   85         libera(a->esq);\par
+   86         libera(a->dir);\par
+   87         free(a);\par
+   88     \}\par
+   89     return NULL;\par
+   90 \}\par
+}
+}
+{\xe \v max\:arvore.h}
+{\xe \v arvore.h\:max}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int max (int  {\i a}, int  {\i b})}}
+\par
+{\bkmkstart AAAAAAAAAR}
+{\bkmkend AAAAAAAAAR}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid   101                       \{\par
+  102     if (a < b) \{\par
+  103         return b;\par
+  104     \} else \{\par
+  105         return a;\par
+  106     \}\par
+  107 \}\par
+}
+}
+{\xe \v menuJogo\:arvore.h}
+{\xe \v arvore.h\:menuJogo}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void menuJogo ()}}
+\par
+{\bkmkstart AAAAAAAAAS}
+{\bkmkend AAAAAAAAAS}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid   205                 \{\par
+  206   Arvore * tree;\par
+  207   int opcao;\par
+  208   FILE * principal;\par
+  209   tree = iniciarArvore();\par
+  210   printf("Portinho e MiniMarina Productions EC e nois 2018.\\n");\par
+  211   do \{\par
+  212     fflush(stdout);\par
+  213     printf("\\nMenu:\\n 1-Come\'E7ar jogo \\n 2-Salvar Jogo em arquivo\\n 3-Sair\\n Opcao: ");\par
+  214     fflush(stdout);\par
+  215     setbuf(stdin, NULL);\par
+  216     scanf("%i", &opcao);\par
+  217     setbuf(stdin, NULL);\par
+  218     switch (opcao) \{\par
+  219       case 1:\par
+  220       \{\par
+  221         tree = iniciarJogo(tree);\par
+  222 \par
+  223         break;\par
+  224       \}\par
+  225       case 2:\par
+  226       \{\par
+  227         if ((principal = fopen("entrada.txt", "w")) == NULL) \{\par
+  228           printf("Deu erro");\par
+  229         \}\par
+  230         fclose(principal);\par
+  231         tree = salvarArvore(tree);\par
+  232         break;\par
+  233       \}\par
+  234       case 3:\par
+  235       \{\par
+  236         printf("Saindo...\\n");\par
+  237         break;\par
+  238 \par
+  239       \}\par
+  240 \par
+  241       default:\par
+  242       \{\par
+  243         printf("Opcao invalida!!!");\par
+  244         break;\par
+  245       \}\par
+  246     \}\par
+  247   \} while (opcao != 3);\par
+  248 \par
+  249 \par
+  250 \}\par
+}
+}
+{\xe \v posOrdem\:arvore.h}
+{\xe \v arvore.h\:posOrdem}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void posOrdem ({\b Arvore} *  {\i a})}}
+\par
+{\bkmkstart AAAAAAAAAT}
+{\bkmkend AAAAAAAAAT}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid   134                          \{\par
+  135     if(a==NULL)\{\par
+  136         printf("<>");\par
+  137     \}\par
+  138     if (a != NULL) \{\par
+  139 \par
+  140         posOrdem(a->esq);\par
+  141         printf(">");\par
+  142         posOrdem(a->dir);\par
+  143         \par
+  144         printf("<%s", a->info);\par
+  145     \}\par
+  146 \}\par
+}
+}
+{\xe \v preOrdem\:arvore.h}
+{\xe \v arvore.h\:preOrdem}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void preOrdem ({\b Arvore} *  {\i a})}}
+\par
+{\bkmkstart AAAAAAAAAU}
+{\bkmkend AAAAAAAAAU}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid   108                          \{\par
+  109     if(a==NULL)\{\par
+  110         printf("<>");\par
+  111     \}\par
+  112     if (a != NULL) \{\par
+  113         printf("<%s", a->info);\par
+  114         preOrdem(a->esq);\par
+  115 \par
+  116         preOrdem(a->dir);\par
+  117         printf(">");\par
+  118     \}\par
+  119 \}\par
+}
+}
+{\xe \v treeVazia\:arvore.h}
+{\xe \v arvore.h\:treeVazia}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Arvore}* treeVazia ()}}
+\par
+{\bkmkstart AAAAAAAAAV}
+{\bkmkend AAAAAAAAAV}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid    10                      \{\par
+   11     return NULL;\par
+   12 \}\par
+}
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Refer\'EAncia ao ficheiro cabecalho.h\par \pard\plain 
+{\tc\tcl2 \v cabecalho.h}
+{\xe \v cabecalho.h}
+{\bkmkstart AAAAAAAAAW}
+{\bkmkend AAAAAAAAAW}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "../lib/catch.hpp"}\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Diagrama de depend\'EAncias de inclus\'E3o para cabecalho.h:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "cabecalho_8h__incl.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Este grafo mostra quais s\'E3o os ficheiros que incluem directamente ou indirectamente este ficheiro:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "cabecalho_8h__dep__incl.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Componentes\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b tree}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Defini\'E7\'F5es de tipos\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+typedef struct {\b tree} {\b Arvore}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Fun\'E7\'F5es\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Arvore} * {\b insere} ({\b Arvore} *a, int valor, char *palavra)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Arvore} * {\b iniciarArvore} ({\b Arvore} *{\b tree})\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Arvore} * {\b salvarArvore} ({\b Arvore} *a)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Arvore} * {\b iniciarJogo} ({\b Arvore} *a)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Arvore} * {\b treeVazia} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Arvore} * {\b insere} ({\b Arvore} *a, char *valor)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Arvore} * {\b excluir} ({\b Arvore} *a, char *valor)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b preOrdem} ({\b Arvore} *a)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b inOrdem} ({\b Arvore} *a)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b posOrdem} ({\b Arvore} *a)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Arvore} * {\b libera} ({\b Arvore} *a)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b altura} ({\b Arvore} *a)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b max} (int a, int b)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Arvore} * {\b busca} ({\b Arvore} *a, char *valor)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b menuJogo} ()\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documenta\'E7\'E3o dos tipos\par
+\pard\plain 
+{\xe \v Arvore\:cabecalho.h}
+{\xe \v cabecalho.h\:Arvore}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+typedef struct {\b tree} {\b Arvore}}}
+\par
+{\bkmkstart AAAAAAAAAX}
+{\bkmkend AAAAAAAAAX}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documenta\'E7\'E3o das fun\'E7\'F5es\par
+\pard\plain 
+{\xe \v altura\:cabecalho.h}
+{\xe \v cabecalho.h\:altura}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int altura ({\b Arvore} *  {\i a})}}
+\par
+{\bkmkstart AAAAAAAAAY}
+{\bkmkend AAAAAAAAAY}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid    92                        \{\par
+   93     if (a == NULL) \{\par
+   94         return -1;\par
+   95 \par
+   96     \} else \{\par
+   97         return 1 + max(altura(a->esq), altura(a->dir));\par
+   98     \}\par
+   99 \}\par
+}
+}
+{\xe \v busca\:cabecalho.h}
+{\xe \v cabecalho.h\:busca}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Arvore}* busca ({\b Arvore} *  {\i a}, char *  {\i valor})}}
+\par
+{\bkmkstart AAAAAAAAAZ}
+{\bkmkend AAAAAAAAAZ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v excluir\:cabecalho.h}
+{\xe \v cabecalho.h\:excluir}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Arvore}* excluir ({\b Arvore} *  {\i a}, char *  {\i valor})}}
+\par
+{\bkmkstart AAAAAAAABA}
+{\bkmkend AAAAAAAABA}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid    42                                            \{\par
+   43     if (a == NULL) \{ //vazia\par
+   44         return NULL;\par
+   45     \} else \{\par
+   46         if (a->esq != NULL) \{ //exclui sae\par
+   47             a->esq = excluir(a->esq, valor);\par
+   48         \} else \{\par
+   49             if (a->dir != NULL) \{ // exclui sad\par
+   50                 a->dir = excluir(a->dir, valor);\par
+   51             \} else \{\par
+   52                 if (a->esq == NULL && a->dir == NULL) \{ //n\'E3o tem filhos \par
+   53                     free(a);\par
+   54                     return NULL;\par
+   55                 \} else \{\par
+   56                     if (a->dir == NULL) \{ //n\'E3o tem filho na direita\par
+   57                         Arvore * aux = a;\par
+   58                         a = a->esq; //ve se tem na esquerda\par
+   59                         free(aux);\par
+   60                     \} else \{\par
+   61                         if (a->esq == NULL) \{ //n\'E3o tem filho na esquerda\par
+   62                             Arvore * aux = a;\par
+   63                             a = a->dir; //ve se tem na direita\par
+   64                             free(aux);\par
+   65                         \} else \{ //arvore tem dois filhos\par
+   66                             Arvore * temp = a->esq;\par
+   67                             while (temp->dir != NULL) \{\par
+   68                                 temp = temp->dir;\par
+   69                             \}\par
+   70                             //                            a->info = temp->info;\par
+   71 \par
+   72                             strcpy(valor, temp->info);\par
+   73                             a->esq = excluir(a->esq, valor);\par
+   74                         \}\par
+   75                     \}\par
+   76                 \}\par
+   77             \}\par
+   78         \}\par
+   79     \}\par
+   80     return a;\par
+   81 \}\par
+}
+}
+{\xe \v iniciarArvore\:cabecalho.h}
+{\xe \v cabecalho.h\:iniciarArvore}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Arvore}* iniciarArvore ({\b Arvore} *  {\i tree})}}
+\par
+{\bkmkstart AAAAAAAABB}
+{\bkmkend AAAAAAAABB}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v iniciarJogo\:cabecalho.h}
+{\xe \v cabecalho.h\:iniciarJogo}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Arvore}* iniciarJogo ({\b Arvore} *  {\i a})}}
+\par
+{\bkmkstart AAAAAAAABC}
+{\bkmkend AAAAAAAABC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid   256                                     \{\par
+  257   fflush(stdout);\par
+  258   printf("Digite y para sim e n para nao: \\n");\par
+  259   fflush(stdout);\par
+  260   char resposta;\par
+  261   char perguntaatual[255];\par
+  262   char novaper [255];\par
+  263   char novarenao [255];\par
+  264   char novaresim [255];\par
+  265   char respostapergunta;\par
+  266   Arvore * raizfinal = tree;\par
+  267   Arvore * topo = tree;\par
+  268   int termina = 0;\par
+  269   if (tree == NULL) \{\par
+  270     printf("Jogo Vaziou");\par
+  271 \par
+  272 \par
+  273   \} else \{\par
+  274 \par
+  275 \par
+  276     do \{\par
+  277       printf("%s", tree->info);\par
+  278       fflush(stdout);\par
+  279       setbuf(stdin, NULL);\par
+  280       scanf(" %c", &resposta);\par
+  281       setbuf(stdin, NULL);\par
+  282 \par
+  283       printf("\\nA pergunta faz sentido y para sim e n para nao\\n");\par
+  284       setbuf(stdin, NULL);\par
+  285       scanf("%c",&respostapergunta);\par
+  286       setbuf(stdin, NULL);\par
+  287       if(respostapergunta=='n')\{\par
+  288         printf("Escreva uma pergunta para colocar no lugar");\par
+  289         scanf("%c",&novaper);\par
+  290         strncpy(tree->info, novaper,255);\par
+  291         \par
+  292       \}\par
+  293 \par
+  294       if (resposta == 'y') \{\par
+  295 \par
+  296 \par
+  297         if (tree->esq == NULL && tree->dir == NULL) \{\par
+  298           strncpy(perguntaatual, tree->info, 255);\par
+  299 \par
+  300           printf("se a resposta for %s digite y se nao for digite n: \\n", tree->info);\par
+  301           fflush(stdout);\par
+  302           setbuf(stdin, NULL);\par
+  303           scanf(" %c", &resposta);\par
+  304           setbuf(stdin, NULL);\par
+  305           if (resposta == 'y' && tree->dir == NULL && tree->esq == NULL) \{\par
+  306             printf("Sucesso eu acertei");\par
+  307             fflush(stdout);\par
+  308             return raizfinal;\par
+  309 \par
+  310           \}\par
+  311 \par
+  312         \}\par
+  313         tree = tree->esq;\par
+  314       \}\par
+  315 \par
+  316 \par
+  317 \par
+  318       if (resposta == 'n') \{\par
+  319         if (tree->dir == NULL && tree->esq == NULL) \{\par
+  320           strcpy(perguntaatual, tree->info);\par
+  321           printf("se a resposta for %s digite y se nao for digite n: \\n", tree->info);\par
+  322           setbuf(stdin, NULL);\par
+  323           scanf(" %c", &resposta);\par
+  324           setbuf(stdin, NULL);\par
+  325           if (resposta == 'y' && tree->dir == NULL && tree->esq == NULL) \{\par
+  326             printf("Sucesso eu acertei");\par
+  327             return raizfinal;\par
+  328 \par
+  329           \} else if (resposta == 'n' && tree->dir == NULL && tree->esq == NULL) \{\par
+  330             printf("Digite uma pergunta que diferencie o que tu estava pensando e duas respostas uma para caso sim e outra para caso nao respectivamente: ");\par
+  331             setbuf(stdin, NULL);\par
+  332             scanf("%s", novaper);\par
+  333             setbuf(stdin, NULL);\par
+  334 \par
+  335             scanf(" %s", novaresim);\par
+  336             setbuf(stdin, NULL);\par
+  337 \par
+  338             scanf(" %s", novarenao);\par
+  339 \par
+  340 \par
+  341             strcpy(tree->info, novaper);\par
+  342 \par
+  343 \par
+  344             Arvore * a = (Arvore *) malloc(sizeof (Arvore));\par
+  345 \par
+  346             tree->esq = a;\par
+  347             strcpy(a->info, novaresim);\par
+  348 \par
+  349             a->esq = NULL;\par
+  350             a->dir = NULL;\par
+  351 \par
+  352 \par
+  353             Arvore * b = (Arvore *) malloc(sizeof (Arvore));\par
+  354 \par
+  355 \par
+  356             tree->dir = b;\par
+  357             strcpy(b->info, novarenao);\par
+  358 \par
+  359             b->esq = NULL;\par
+  360             b->dir = NULL;\par
+  361             return raizfinal;\par
+  362 \par
+  363           \}\par
+  364         \}\par
+  365         if (resposta = 'n' && tree->dir == NULL && tree->esq == NULL) \{\par
+  366           printf("\\n A resposta n\'E3o esta no banco");\par
+  367 \par
+  368           printf("Digite uma pergunta que diferencie o que tu estava pensando e duas respostas uma para caso sim e outra para caso nao respectivamente: ");\par
+  369 \par
+  370           scanf("%s", novaper);\par
+  371           fflush(stdout);\par
+  372           scanf(" %s", novaresim);\par
+  373           fflush(stdout);\par
+  374           scanf(" %s", novarenao);\par
+  375         \} else \{\par
+  376           tree = tree->dir;\par
+  377         \}\par
+  378 \par
+  379       \}\par
+  380 \par
+  381 \par
+  382 \par
+  383 \par
+  384 \par
+  385 \par
+  386 \par
+  387     \} while (termina != 1);\par
+  388 \par
+  389 \par
+  390 \par
+  391   \}\par
+  392   return topo;\par
+  393 \par
+  394 \par
+  395 \}\par
+}
+}
+{\xe \v inOrdem\:cabecalho.h}
+{\xe \v cabecalho.h\:inOrdem}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void inOrdem ({\b Arvore} *  {\i a})}}
+\par
+{\bkmkstart AAAAAAAABD}
+{\bkmkend AAAAAAAABD}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid   121                         \{\par
+  122     if(a==NULL)\{\par
+  123         printf("<>");\par
+  124     \}\par
+  125     if (a != NULL) \{\par
+  126 \par
+  127         inOrdem(a->esq);\par
+  128         printf("<%s", a->info);\par
+  129         inOrdem(a->dir);\par
+  130         printf(">");\par
+  131     \}\par
+  132 \}\par
+}
+}
+{\xe \v insere\:cabecalho.h}
+{\xe \v cabecalho.h\:insere}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Arvore}* insere ({\b Arvore} *  {\i a}, int  {\i valor}, char *  {\i palavra})}}
+\par
+{\bkmkstart AAAAAAAABE}
+{\bkmkend AAAAAAAABE}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v insere\:cabecalho.h}
+{\xe \v cabecalho.h\:insere}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Arvore}* insere ({\b Arvore} *  {\i a}, char *  {\i valor})}}
+\par
+{\bkmkstart AAAAAAAABF}
+{\bkmkend AAAAAAAABF}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid    24                                             \{\par
+   25     if (a == NULL) \{\par
+   26         a = (Arvore *) malloc(sizeof (Arvore));\par
+   27         strcpy(a->info, palavra);\par
+   28         a->dir = NULL;\par
+   29         a->esq = NULL;\par
+   30     \} else \{\par
+   31         if ( a->esq!=NULL) \{\par
+   32 \par
+   33             a->esq = insere(a->esq, palavra);\par
+   34         \} else \{\par
+   35 \par
+   36             a->dir = insere(a->dir, palavra);\par
+   37         \}\par
+   38     \}\par
+   39     return a;\par
+   40 \}\par
+}
+}
+{\xe \v libera\:cabecalho.h}
+{\xe \v cabecalho.h\:libera}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Arvore}* libera ({\b Arvore} *  {\i a})}}
+\par
+{\bkmkstart AAAAAAAABG}
+{\bkmkend AAAAAAAABG}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid    83                            \{\par
+   84     if (a == NULL) \{\par
+   85         libera(a->esq);\par
+   86         libera(a->dir);\par
+   87         free(a);\par
+   88     \}\par
+   89     return NULL;\par
+   90 \}\par
+}
+}
+{\xe \v max\:cabecalho.h}
+{\xe \v cabecalho.h\:max}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int max (int  {\i a}, int  {\i b})}}
+\par
+{\bkmkstart AAAAAAAABH}
+{\bkmkend AAAAAAAABH}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid   101                       \{\par
+  102     if (a < b) \{\par
+  103         return b;\par
+  104     \} else \{\par
+  105         return a;\par
+  106     \}\par
+  107 \}\par
+}
+}
+{\xe \v menuJogo\:cabecalho.h}
+{\xe \v cabecalho.h\:menuJogo}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void menuJogo ()}}
+\par
+{\bkmkstart AAAAAAAABI}
+{\bkmkend AAAAAAAABI}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid   205                 \{\par
+  206   Arvore * tree;\par
+  207   int opcao;\par
+  208   FILE * principal;\par
+  209   tree = iniciarArvore();\par
+  210   printf("Portinho e MiniMarina Productions EC e nois 2018.\\n");\par
+  211   do \{\par
+  212     fflush(stdout);\par
+  213     printf("\\nMenu:\\n 1-Come\'E7ar jogo \\n 2-Salvar Jogo em arquivo\\n 3-Sair\\n Opcao: ");\par
+  214     fflush(stdout);\par
+  215     setbuf(stdin, NULL);\par
+  216     scanf("%i", &opcao);\par
+  217     setbuf(stdin, NULL);\par
+  218     switch (opcao) \{\par
+  219       case 1:\par
+  220       \{\par
+  221         tree = iniciarJogo(tree);\par
+  222 \par
+  223         break;\par
+  224       \}\par
+  225       case 2:\par
+  226       \{\par
+  227         if ((principal = fopen("entrada.txt", "w")) == NULL) \{\par
+  228           printf("Deu erro");\par
+  229         \}\par
+  230         fclose(principal);\par
+  231         tree = salvarArvore(tree);\par
+  232         break;\par
+  233       \}\par
+  234       case 3:\par
+  235       \{\par
+  236         printf("Saindo...\\n");\par
+  237         break;\par
+  238 \par
+  239       \}\par
+  240 \par
+  241       default:\par
+  242       \{\par
+  243         printf("Opcao invalida!!!");\par
+  244         break;\par
+  245       \}\par
+  246     \}\par
+  247   \} while (opcao != 3);\par
+  248 \par
+  249 \par
+  250 \}\par
+}
+}
+{\xe \v posOrdem\:cabecalho.h}
+{\xe \v cabecalho.h\:posOrdem}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void posOrdem ({\b Arvore} *  {\i a})}}
+\par
+{\bkmkstart AAAAAAAABJ}
+{\bkmkend AAAAAAAABJ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid   134                          \{\par
+  135     if(a==NULL)\{\par
+  136         printf("<>");\par
+  137     \}\par
+  138     if (a != NULL) \{\par
+  139 \par
+  140         posOrdem(a->esq);\par
+  141         printf(">");\par
+  142         posOrdem(a->dir);\par
+  143         \par
+  144         printf("<%s", a->info);\par
+  145     \}\par
+  146 \}\par
+}
+}
+{\xe \v preOrdem\:cabecalho.h}
+{\xe \v cabecalho.h\:preOrdem}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void preOrdem ({\b Arvore} *  {\i a})}}
+\par
+{\bkmkstart AAAAAAAABK}
+{\bkmkend AAAAAAAABK}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid   108                          \{\par
+  109     if(a==NULL)\{\par
+  110         printf("<>");\par
+  111     \}\par
+  112     if (a != NULL) \{\par
+  113         printf("<%s", a->info);\par
+  114         preOrdem(a->esq);\par
+  115 \par
+  116         preOrdem(a->dir);\par
+  117         printf(">");\par
+  118     \}\par
+  119 \}\par
+}
+}
+{\xe \v salvarArvore\:cabecalho.h}
+{\xe \v cabecalho.h\:salvarArvore}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Arvore}* salvarArvore ({\b Arvore} *  {\i a})}}
+\par
+{\bkmkstart AAAAAAAABL}
+{\bkmkend AAAAAAAABL}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid   178                                      \{\par
+  179   FILE * principal;\par
+  180 \par
+  181 \par
+  182   if ((principal = fopen("entrada.txt", "a")) == NULL) \{\par
+  183     printf("Deu erro");\par
+  184   \}\par
+  185 \par
+  186 \par
+  187   if (tree == NULL) \{\par
+  188 \par
+  189   \}\par
+  190   if (tree != NULL) \{\par
+  191     fprintf(principal, tree->info, 255);\par
+  192     salvarArvore(tree->esq);\par
+  193 \par
+  194     salvarArvore(tree->dir);\par
+  195 \par
+  196   \}\par
+  197 \par
+  198   fclose(principal);\par
+  199   return tree;\par
+  200 \}\par
+}
+}
+{\xe \v treeVazia\:cabecalho.h}
+{\xe \v cabecalho.h\:treeVazia}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Arvore}* treeVazia ()}}
+\par
+{\bkmkstart AAAAAAAABM}
+{\bkmkend AAAAAAAABM}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid    10                      \{\par
+   11     return NULL;\par
+   12 \}\par
+}
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Refer\'EAncia ao ficheiro funcoes.cpp\par \pard\plain 
+{\tc\tcl2 \v funcoes.cpp}
+{\xe \v funcoes.cpp}
+{\bkmkstart AAAAAAAABN}
+{\bkmkend AAAAAAAABN}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "cabecalho.h"}\par
+{\f2 #include <stdio.h>}\par
+{\f2 #include <stdlib.h>}\par
+{\f2 #include <string.h>}\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Diagrama de depend\'EAncias de inclus\'E3o para funcoes.cpp:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "funcoes_8cpp__incl.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Fun\'E7\'F5es\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Arvore} * {\b iniciarArvore} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Arvore} * {\b salvarArvore} ({\b Arvore} *{\b tree})\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b menuJogo} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Arvore} * {\b iniciarJogo} ({\b Arvore} *{\b tree})\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documenta\'E7\'E3o das fun\'E7\'F5es\par
+\pard\plain 
+{\xe \v iniciarArvore\:funcoes.cpp}
+{\xe \v funcoes.cpp\:iniciarArvore}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Arvore}* iniciarArvore ()}}
+\par
+{\bkmkstart AAAAAAAABO}
+{\bkmkend AAAAAAAABO}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid    15                          \{\par
+   16   FILE * principal;\par
+   17   int cont = 0;\par
+   18   char palavra[100] [255];\par
+   19 \par
+   20   Arvore * A1 = (Arvore *) malloc(sizeof (Arvore));\par
+   21   Arvore * A2 = (Arvore *) malloc(sizeof (Arvore));\par
+   22   Arvore * A3 = (Arvore *) malloc(sizeof (Arvore));\par
+   23   Arvore * A4 = (Arvore *) malloc(sizeof (Arvore));\par
+   24   Arvore * A5 = (Arvore *) malloc(sizeof (Arvore));\par
+   25   Arvore * A6 = (Arvore *) malloc(sizeof (Arvore));\par
+   26   Arvore * A7 = (Arvore *) malloc(sizeof (Arvore));\par
+   27   Arvore * A8 = (Arvore *) malloc(sizeof (Arvore));\par
+   28   Arvore * A9 = (Arvore *) malloc(sizeof (Arvore));\par
+   29   Arvore * A10 = (Arvore *) malloc(sizeof (Arvore));\par
+   30   Arvore * A11 = (Arvore *) malloc(sizeof (Arvore));\par
+   31   Arvore * A12 = (Arvore *) malloc(sizeof (Arvore));\par
+   32   Arvore * A13 = (Arvore *) malloc(sizeof (Arvore));\par
+   33   Arvore * A14 = (Arvore *) malloc(sizeof (Arvore));\par
+   34   Arvore * A15 = (Arvore *) malloc(sizeof (Arvore));\par
+   35   Arvore * A16 = (Arvore *) malloc(sizeof (Arvore));\par
+   36   Arvore * A17 = (Arvore *) malloc(sizeof (Arvore));\par
+   37   Arvore * A18 = (Arvore *) malloc(sizeof (Arvore));\par
+   38   Arvore * A19 = (Arvore *) malloc(sizeof (Arvore));\par
+   39   Arvore * A20 = (Arvore *) malloc(sizeof (Arvore));\par
+   40   Arvore * A21 = (Arvore *) malloc(sizeof (Arvore));\par
+   41   Arvore * A22 = (Arvore *) malloc(sizeof (Arvore));\par
+   42   Arvore * A23 = (Arvore *) malloc(sizeof (Arvore));\par
+   43   Arvore * A24 = (Arvore *) malloc(sizeof (Arvore));\par
+   44   Arvore * A25 = (Arvore *) malloc(sizeof (Arvore));\par
+   45   Arvore * A26 = (Arvore *) malloc(sizeof (Arvore));\par
+   46   Arvore * A27 = (Arvore *) malloc(sizeof (Arvore));\par
+   47   Arvore * A28 = (Arvore *) malloc(sizeof (Arvore));\par
+   48   Arvore * A29 = (Arvore *) malloc(sizeof (Arvore));\par
+   49   Arvore * A30 = (Arvore *) malloc(sizeof (Arvore));\par
+   50   Arvore * A31 = (Arvore *) malloc(sizeof (Arvore));\par
+   51   Arvore * A32 = (Arvore *) malloc(sizeof (Arvore));\par
+   52   Arvore * A33 = (Arvore *) malloc(sizeof (Arvore));\par
+   53   if ((principal = fopen("entrada.txt", "rt")) == NULL) \{\par
+   54     printf("Deu erro");\par
+   55   \}\par
+   56 \par
+   57   while (fgets(palavra[cont], 255, principal) != NULL) \{\par
+   58     cont++;\par
+   59 \par
+   60   \}\par
+   61   fclose(principal);\par
+   62   strncpy(A1->info, palavra[0], 255);\par
+   63   strncpy(A2->info, palavra[1], 255);\par
+   64   strncpy(A3->info, palavra[2], 255);\par
+   65   strncpy(A4->info, palavra[3], 255);\par
+   66   strncpy(A5->info, palavra[4], 255);\par
+   67   strncpy(A6->info, palavra[5], 255);\par
+   68   strncpy(A7->info, palavra[6], 255);\par
+   69   strncpy(A8->info, palavra[7], 255);\par
+   70   strncpy(A9->info, palavra[8], 255);\par
+   71   strncpy(A10->info, palavra[9], 255);\par
+   72   strncpy(A11->info, palavra[10], 255);\par
+   73   strncpy(A12->info, palavra[11], 255);\par
+   74   strncpy(A13->info, palavra[12], 255);\par
+   75   strncpy(A14->info, palavra[13], 255);\par
+   76   strncpy(A15->info, palavra[14], 255);\par
+   77   strncpy(A16->info, palavra[15], 255);\par
+   78   strncpy(A17->info, palavra[16], 255);\par
+   79   strncpy(A18->info, palavra[17], 255);\par
+   80   strncpy(A19->info, palavra[18], 255);\par
+   81   strncpy(A20->info, palavra[19], 255);\par
+   82   strncpy(A21->info, palavra[20], 255);\par
+   83   strncpy(A22->info, palavra[21], 255);\par
+   84   strncpy(A23->info, palavra[22], 255);\par
+   85   strncpy(A24->info, palavra[23], 255);\par
+   86   strncpy(A25->info, palavra[24], 255);\par
+   87   strncpy(A26->info, palavra[25], 255);\par
+   88   strncpy(A27->info, palavra[26], 255);\par
+   89   strncpy(A28->info, palavra[27], 255);\par
+   90   strncpy(A29->info, palavra[28], 255);\par
+   91   strncpy(A30->info, palavra[29], 255);\par
+   92   strncpy(A31->info, palavra[30], 255);\par
+   93   strncpy(A32->info, palavra[29], 255);\par
+   94   strncpy(A33->info, palavra[30], 255);\par
+   95 \par
+   96   A1->esq = A2;\par
+   97   A1->dir = A3;\par
+   98   A2->esq = A4;\par
+   99   A2->dir = A5;\par
+  100   A3->esq = A6;\par
+  101   A3->dir = A7;\par
+  102   A4->esq = A8;\par
+  103   A4->dir = A9;\par
+  104   A5->esq = A10;\par
+  105   A6->esq = A12;\par
+  106   A5->dir = A11;\par
+  107   A6->dir = A13;\par
+  108   A7->dir = A15;\par
+  109   A7->esq = A14;\par
+  110   A8->esq = A16;\par
+  111   A8->dir = A17;\par
+  112   A9->esq = A18;\par
+  113   A9->dir = A19;\par
+  114   A10->esq = A20;\par
+  115   A10->dir = A21;\par
+  116   A11->esq = A22;\par
+  117   A11->dir = A23;\par
+  118   A12->esq = A24;\par
+  119   A12->dir = A25;\par
+  120   A13->esq = A26;\par
+  121   A13->dir = A27;\par
+  122   A14->esq = A28;\par
+  123   A14->dir = A29;\par
+  124   A15->esq = A30;\par
+  125   A15->dir = A31;\par
+  126   A16->esq = A32;\par
+  127   A16->dir = A33;\par
+  128 \par
+  129 \par
+  130   A17->esq = NULL;\par
+  131   A17->dir = NULL;\par
+  132   A18->esq = NULL;\par
+  133   A18->dir = NULL;\par
+  134   A19->esq = NULL;\par
+  135   A19->dir = NULL;\par
+  136   A20->esq = NULL;\par
+  137   A20->esq = NULL;\par
+  138   A21->dir = NULL;\par
+  139   A21->dir = NULL;\par
+  140   A22->dir = NULL;\par
+  141   A22->esq = NULL;\par
+  142   A23->esq = NULL;\par
+  143   A23->dir = NULL;\par
+  144   A24->esq = NULL;\par
+  145   A24->dir = NULL;\par
+  146   A25->esq = NULL;\par
+  147   A25->dir = NULL;\par
+  148   A26->esq = NULL;\par
+  149   A26->dir = NULL;\par
+  150   A27->esq = NULL;\par
+  151   A27->dir = NULL;\par
+  152   A28->esq = NULL;\par
+  153   A28->dir = NULL;\par
+  154   A29->esq = NULL;\par
+  155   A29->dir = NULL;\par
+  156   A30->esq = NULL;\par
+  157   A30->dir = NULL;\par
+  158   A31->esq = NULL;\par
+  159   A31->dir = NULL;\par
+  160   A32->esq = NULL;\par
+  161   A32->dir = NULL;\par
+  162   A33->esq = NULL;\par
+  163   A33->dir = NULL;\par
+  164 \par
+  165 \par
+  166 \par
+  167 \par
+  168 \par
+  169 \par
+  170 \par
+  171   return A1;\par
+  172 \par
+  173 \}\par
+}
+}
+{\xe \v iniciarJogo\:funcoes.cpp}
+{\xe \v funcoes.cpp\:iniciarJogo}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Arvore}* iniciarJogo ({\b Arvore} *  {\i tree})}}
+\par
+{\bkmkstart AAAAAAAABP}
+{\bkmkend AAAAAAAABP}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid   256                                     \{\par
+  257   fflush(stdout);\par
+  258   printf("Digite y para sim e n para nao: \\n");\par
+  259   fflush(stdout);\par
+  260   char resposta;\par
+  261   char perguntaatual[255];\par
+  262   char novaper [255];\par
+  263   char novarenao [255];\par
+  264   char novaresim [255];\par
+  265   char respostapergunta;\par
+  266   Arvore * raizfinal = tree;\par
+  267   Arvore * topo = tree;\par
+  268   int termina = 0;\par
+  269   if (tree == NULL) \{\par
+  270     printf("Jogo Vaziou");\par
+  271 \par
+  272 \par
+  273   \} else \{\par
+  274 \par
+  275 \par
+  276     do \{\par
+  277       printf("%s", tree->info);\par
+  278       fflush(stdout);\par
+  279       setbuf(stdin, NULL);\par
+  280       scanf(" %c", &resposta);\par
+  281       setbuf(stdin, NULL);\par
+  282 \par
+  283       printf("\\nA pergunta faz sentido y para sim e n para nao\\n");\par
+  284       setbuf(stdin, NULL);\par
+  285       scanf("%c",&respostapergunta);\par
+  286       setbuf(stdin, NULL);\par
+  287       if(respostapergunta=='n')\{\par
+  288         printf("Escreva uma pergunta para colocar no lugar");\par
+  289         scanf("%c",&novaper);\par
+  290         strncpy(tree->info, novaper,255);\par
+  291         \par
+  292       \}\par
+  293 \par
+  294       if (resposta == 'y') \{\par
+  295 \par
+  296 \par
+  297         if (tree->esq == NULL && tree->dir == NULL) \{\par
+  298           strncpy(perguntaatual, tree->info, 255);\par
+  299 \par
+  300           printf("se a resposta for %s digite y se nao for digite n: \\n", tree->info);\par
+  301           fflush(stdout);\par
+  302           setbuf(stdin, NULL);\par
+  303           scanf(" %c", &resposta);\par
+  304           setbuf(stdin, NULL);\par
+  305           if (resposta == 'y' && tree->dir == NULL && tree->esq == NULL) \{\par
+  306             printf("Sucesso eu acertei");\par
+  307             fflush(stdout);\par
+  308             return raizfinal;\par
+  309 \par
+  310           \}\par
+  311 \par
+  312         \}\par
+  313         tree = tree->esq;\par
+  314       \}\par
+  315 \par
+  316 \par
+  317 \par
+  318       if (resposta == 'n') \{\par
+  319         if (tree->dir == NULL && tree->esq == NULL) \{\par
+  320           strcpy(perguntaatual, tree->info);\par
+  321           printf("se a resposta for %s digite y se nao for digite n: \\n", tree->info);\par
+  322           setbuf(stdin, NULL);\par
+  323           scanf(" %c", &resposta);\par
+  324           setbuf(stdin, NULL);\par
+  325           if (resposta == 'y' && tree->dir == NULL && tree->esq == NULL) \{\par
+  326             printf("Sucesso eu acertei");\par
+  327             return raizfinal;\par
+  328 \par
+  329           \} else if (resposta == 'n' && tree->dir == NULL && tree->esq == NULL) \{\par
+  330             printf("Digite uma pergunta que diferencie o que tu estava pensando e duas respostas uma para caso sim e outra para caso nao respectivamente: ");\par
+  331             setbuf(stdin, NULL);\par
+  332             scanf("%s", novaper);\par
+  333             setbuf(stdin, NULL);\par
+  334 \par
+  335             scanf(" %s", novaresim);\par
+  336             setbuf(stdin, NULL);\par
+  337 \par
+  338             scanf(" %s", novarenao);\par
+  339 \par
+  340 \par
+  341             strcpy(tree->info, novaper);\par
+  342 \par
+  343 \par
+  344             Arvore * a = (Arvore *) malloc(sizeof (Arvore));\par
+  345 \par
+  346             tree->esq = a;\par
+  347             strcpy(a->info, novaresim);\par
+  348 \par
+  349             a->esq = NULL;\par
+  350             a->dir = NULL;\par
+  351 \par
+  352 \par
+  353             Arvore * b = (Arvore *) malloc(sizeof (Arvore));\par
+  354 \par
+  355 \par
+  356             tree->dir = b;\par
+  357             strcpy(b->info, novarenao);\par
+  358 \par
+  359             b->esq = NULL;\par
+  360             b->dir = NULL;\par
+  361             return raizfinal;\par
+  362 \par
+  363           \}\par
+  364         \}\par
+  365         if (resposta = 'n' && tree->dir == NULL && tree->esq == NULL) \{\par
+  366           printf("\\n A resposta n\'E3o esta no banco");\par
+  367 \par
+  368           printf("Digite uma pergunta que diferencie o que tu estava pensando e duas respostas uma para caso sim e outra para caso nao respectivamente: ");\par
+  369 \par
+  370           scanf("%s", novaper);\par
+  371           fflush(stdout);\par
+  372           scanf(" %s", novaresim);\par
+  373           fflush(stdout);\par
+  374           scanf(" %s", novarenao);\par
+  375         \} else \{\par
+  376           tree = tree->dir;\par
+  377         \}\par
+  378 \par
+  379       \}\par
+  380 \par
+  381 \par
+  382 \par
+  383 \par
+  384 \par
+  385 \par
+  386 \par
+  387     \} while (termina != 1);\par
+  388 \par
+  389 \par
+  390 \par
+  391   \}\par
+  392   return topo;\par
+  393 \par
+  394 \par
+  395 \}\par
+}
+}
+{\xe \v menuJogo\:funcoes.cpp}
+{\xe \v funcoes.cpp\:menuJogo}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void menuJogo ()}}
+\par
+{\bkmkstart AAAAAAAABQ}
+{\bkmkend AAAAAAAABQ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid   205                 \{\par
+  206   Arvore * tree;\par
+  207   int opcao;\par
+  208   FILE * principal;\par
+  209   tree = iniciarArvore();\par
+  210   printf("Portinho e MiniMarina Productions EC e nois 2018.\\n");\par
+  211   do \{\par
+  212     fflush(stdout);\par
+  213     printf("\\nMenu:\\n 1-Come\'E7ar jogo \\n 2-Salvar Jogo em arquivo\\n 3-Sair\\n Opcao: ");\par
+  214     fflush(stdout);\par
+  215     setbuf(stdin, NULL);\par
+  216     scanf("%i", &opcao);\par
+  217     setbuf(stdin, NULL);\par
+  218     switch (opcao) \{\par
+  219       case 1:\par
+  220       \{\par
+  221         tree = iniciarJogo(tree);\par
+  222 \par
+  223         break;\par
+  224       \}\par
+  225       case 2:\par
+  226       \{\par
+  227         if ((principal = fopen("entrada.txt", "w")) == NULL) \{\par
+  228           printf("Deu erro");\par
+  229         \}\par
+  230         fclose(principal);\par
+  231         tree = salvarArvore(tree);\par
+  232         break;\par
+  233       \}\par
+  234       case 3:\par
+  235       \{\par
+  236         printf("Saindo...\\n");\par
+  237         break;\par
+  238 \par
+  239       \}\par
+  240 \par
+  241       default:\par
+  242       \{\par
+  243         printf("Opcao invalida!!!");\par
+  244         break;\par
+  245       \}\par
+  246     \}\par
+  247   \} while (opcao != 3);\par
+  248 \par
+  249 \par
+  250 \}\par
+}
+}
+{\xe \v salvarArvore\:funcoes.cpp}
+{\xe \v funcoes.cpp\:salvarArvore}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Arvore}* salvarArvore ({\b Arvore} *  {\i tree})}}
+\par
+{\bkmkstart AAAAAAAABR}
+{\bkmkend AAAAAAAABR}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid   178                                      \{\par
+  179   FILE * principal;\par
+  180 \par
+  181 \par
+  182   if ((principal = fopen("entrada.txt", "a")) == NULL) \{\par
+  183     printf("Deu erro");\par
+  184   \}\par
+  185 \par
+  186 \par
+  187   if (tree == NULL) \{\par
+  188 \par
+  189   \}\par
+  190   if (tree != NULL) \{\par
+  191     fprintf(principal, tree->info, 255);\par
+  192     salvarArvore(tree->esq);\par
+  193 \par
+  194     salvarArvore(tree->dir);\par
+  195 \par
+  196   \}\par
+  197 \par
+  198   fclose(principal);\par
+  199   return tree;\par
+  200 \}\par
+}
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Refer\'EAncia ao ficheiro main.cpp\par \pard\plain 
+{\tc\tcl2 \v main.cpp}
+{\xe \v main.cpp}
+{\bkmkstart AAAAAAAABS}
+{\bkmkend AAAAAAAABS}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <cstdlib>}\par
+{\f2 #include "cabecalho.h"}\par
+{\f2 #include "../lib/catch.hpp"}\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Diagrama de depend\'EAncias de inclus\'E3o para main.cpp:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "main_8cpp__incl.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macros\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b CATCH_CONFIG_MAIN}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Fun\'E7\'F5es\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b main} (int argc, char **argv)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documenta\'E7\'E3o das macros\par
+\pard\plain 
+{\xe \v CATCH_CONFIG_MAIN\:main.cpp}
+{\xe \v main.cpp\:CATCH_CONFIG_MAIN}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define CATCH_CONFIG_MAIN}}
+\par
+{\bkmkstart AAAAAAAABT}
+{\bkmkend AAAAAAAABT}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documenta\'E7\'E3o das fun\'E7\'F5es\par
+\pard\plain 
+{\xe \v main\:main.cpp}
+{\xe \v main.cpp\:main}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int main (int  {\i argc}, char **  {\i argv})}}
+\par
+{\bkmkstart AAAAAAAABU}
+{\bkmkend AAAAAAAABU}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid    22                                 \{\par
+   23 \par
+   24     menuJogo();\par
+   25     \par
+   26      \par
+   27     \par
+   28     return 0;\par
+   29 \}\par
+}
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Refer\'EAncia ao ficheiro testaArvore.cpp\par \pard\plain 
+{\tc\tcl2 \v testaArvore.cpp}
+{\xe \v testaArvore.cpp}
+{\bkmkstart AAAAAAAABV}
+{\bkmkend AAAAAAAABV}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <stdlib.h>}\par
+{\f2 #include <iostream>}\par
+{\f2 #include "arvore.h"}\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Diagrama de depend\'EAncias de inclus\'E3o para testaArvore.cpp:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "testa_arvore_8cpp__incl.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macros\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b CATCH_CONFIG_MAIN}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Fun\'E7\'F5es\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b TEST_CASE} ("Testa a arvore", "")\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documenta\'E7\'E3o das macros\par
+\pard\plain 
+{\xe \v CATCH_CONFIG_MAIN\:testaArvore.cpp}
+{\xe \v testaArvore.cpp\:CATCH_CONFIG_MAIN}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define CATCH_CONFIG_MAIN}}
+\par
+{\bkmkstart AAAAAAAABW}
+{\bkmkend AAAAAAAABW}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documenta\'E7\'E3o das fun\'E7\'F5es\par
+\pard\plain 
+{\xe \v TEST_CASE\:testaArvore.cpp}
+{\xe \v testaArvore.cpp\:TEST_CASE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+TEST_CASE ("Testa a arvore" , "" )}}
+\par
+{\bkmkstart AAAAAAAABX}
+{\bkmkend AAAAAAAABX}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid    22                                 \{\par
+   23     char * palavra[255]="teste";\par
+   24     REQUIRE(Arvore * a = treeVazia() ==NULL);\par
+   25     REQUIRE(insere(a,palavra) !=NULL);\par
+   26     REQUIRE(excluir(a,palavra) != NULL);\par
+   27     REQUIRE(preOrdem(a));\par
+   28     REQUIRE(inOrdem(a));\par
+   29     REQUIRE(posOrdem(a));\par
+   30     REQUIRE(libera(a)==NULL);\par
+   31 \par
+   32 \}\par
+}
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Refer\'EAncia ao ficheiro testeJogo.cpp\par \pard\plain 
+{\tc\tcl2 \v testeJogo.cpp}
+{\xe \v testeJogo.cpp}
+{\bkmkstart AAAAAAAABY}
+{\bkmkend AAAAAAAABY}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "cabecalho.h"}\par
+{\f2 #include <stdlib.h>}\par
+{\f2 #include <iostream>}\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Diagrama de depend\'EAncias de inclus\'E3o para testeJogo.cpp:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "teste_jogo_8cpp__incl.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macros\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b CATCH_CONFIG_MAIN}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Fun\'E7\'F5es\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b TEST_CASE} ("Testa o jogo", "")\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documenta\'E7\'E3o das macros\par
+\pard\plain 
+{\xe \v CATCH_CONFIG_MAIN\:testeJogo.cpp}
+{\xe \v testeJogo.cpp\:CATCH_CONFIG_MAIN}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define CATCH_CONFIG_MAIN}}
+\par
+{\bkmkstart AAAAAAAABZ}
+{\bkmkend AAAAAAAABZ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documenta\'E7\'E3o das fun\'E7\'F5es\par
+\pard\plain 
+{\xe \v TEST_CASE\:testeJogo.cpp}
+{\xe \v testeJogo.cpp\:TEST_CASE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+TEST_CASE ("Testa o jogo" , "" )}}
+\par
+{\bkmkstart AAAAAAAACA}
+{\bkmkend AAAAAAAACA}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid    24                               \{\par
+   25     Arvore * a;\par
+   26     REQUIRE(a= iniciarArvore() !=NULL);\par
+   27     REQUIRE(salvarArvore(a) !=NULL);\par
+   28     REQUIRE(iniciarJogo(a) != NULL);\par
+   29     REQUIRE(menuJogo() == 0);\par
+   30 \par
+   31 \}\par
+}
+}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \'CDndice\par 
+\pard\plain 
+{\tc \v \'CDndice}
+{\field\fldedit {\*\fldinst INDEX \\c2 \\*MERGEFORMAT}{\fldrslt INDEX}}
+}

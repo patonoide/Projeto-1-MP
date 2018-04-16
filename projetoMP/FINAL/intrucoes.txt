@@ -1,0 +1,4 @@
+Intruções:
+
+1-Dar make.
+2-Executar o arquivo criado.

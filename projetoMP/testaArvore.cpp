@@ -20,12 +20,13 @@
  */
 
 TEST_CASE("Testa a arvore", "") {
-    REQUIRE(treeVazia() ==NULL);
-    REQUIRE(insere() !=NULL);
-    REQUIRE(excluir() != NULL);
-    REQUIRE(preOrdem());
-    REQUIRE(inOrdem());
-    REQUIRE(posOrdem());
-    REQUIRE(libera()==NULL);
+    char * palavra[255]="teste";
+    REQUIRE(Arvore * a = treeVazia() ==NULL);
+    REQUIRE(insere(a,palavra) !=NULL);
+    REQUIRE(excluir(a,palavra) != NULL);
+    REQUIRE(preOrdem(a));
+    REQUIRE(inOrdem(a));
+    REQUIRE(posOrdem(a));
+    REQUIRE(libera(a)==NULL);
 
 }

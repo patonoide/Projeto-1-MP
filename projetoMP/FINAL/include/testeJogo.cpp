@@ -22,9 +22,10 @@
  */
 
 TEST_CASE("Testa o jogo", "") {
-    REQUIRE(iniciarArvore() !=NULL);
-    REQUIRE(salvarArvore() !=NULL);
-    REQUIRE(iniciarJogo() == 0);
+    Arvore * a;
+    REQUIRE(a= iniciarArvore() !=NULL);
+    REQUIRE(salvarArvore(a) !=NULL);
+    REQUIRE(iniciarJogo(a) != NULL);
     REQUIRE(menuJogo() == 0);
 
 }

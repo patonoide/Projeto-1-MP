@@ -3,10 +3,10 @@ CC=g++
 CFLAGS=   -fprofile-arcs -ftest-coverage   -I$(IDIR)
 
 
-
+ODIR=include
 LIBS=-lm
 
-_DEPS = cabecalho.h arvore.h 
+_DEPS = cabecalho.h arvore.h
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
 
 _OBJ = funcoes.o main.o arvore.o
@@ -22,4 +22,4 @@ projetomp: $(OBJ)
 .PHONY: clean
 
 clean:
-	rm -f $(ODIR)/*.o *~ core $(INCDIR)/*~ 
+	rm -f $(ODIR)/*.o *~ core $(INCDIR)/*~

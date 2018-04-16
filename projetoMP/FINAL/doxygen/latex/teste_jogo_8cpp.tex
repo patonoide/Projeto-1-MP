@@ -1,0 +1,46 @@
+\hypertarget{teste_jogo_8cpp}{}\section{Referência ao ficheiro teste\+Jogo.\+cpp}
+\label{teste_jogo_8cpp}\index{teste\+Jogo.\+cpp@{teste\+Jogo.\+cpp}}
+{\ttfamily \#include \char`\"{}cabecalho.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+Diagrama de dependências de inclusão para teste\+Jogo.\+cpp\+:
+% FIG 0
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{teste_jogo_8cpp_a656eb5868e824d59f489f910db438420}{C\+A\+T\+C\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+M\+A\+IN}
+\end{DoxyCompactItemize}
+\subsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{teste_jogo_8cpp_ae1a9e334b18e963cf56a1c4e6017781f}{T\+E\+S\+T\+\_\+\+C\+A\+SE} (\char`\"{}Testa o jogo\char`\"{}, \char`\"{}\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentação das macros}
+\mbox{\Hypertarget{teste_jogo_8cpp_a656eb5868e824d59f489f910db438420}\label{teste_jogo_8cpp_a656eb5868e824d59f489f910db438420}} 
+\index{teste\+Jogo.\+cpp@{teste\+Jogo.\+cpp}!C\+A\+T\+C\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+M\+A\+IN@{C\+A\+T\+C\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+M\+A\+IN}}
+\index{C\+A\+T\+C\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+M\+A\+IN@{C\+A\+T\+C\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+M\+A\+IN}!teste\+Jogo.\+cpp@{teste\+Jogo.\+cpp}}
+\subsubsection{\texorpdfstring{C\+A\+T\+C\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+M\+A\+IN}{CATCH\_CONFIG\_MAIN}}
+{\footnotesize\ttfamily \#define C\+A\+T\+C\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+M\+A\+IN}
+
+
+
+\subsection{Documentação das funções}
+\mbox{\Hypertarget{teste_jogo_8cpp_ae1a9e334b18e963cf56a1c4e6017781f}\label{teste_jogo_8cpp_ae1a9e334b18e963cf56a1c4e6017781f}} 
+\index{teste\+Jogo.\+cpp@{teste\+Jogo.\+cpp}!T\+E\+S\+T\+\_\+\+C\+A\+SE@{T\+E\+S\+T\+\_\+\+C\+A\+SE}}
+\index{T\+E\+S\+T\+\_\+\+C\+A\+SE@{T\+E\+S\+T\+\_\+\+C\+A\+SE}!teste\+Jogo.\+cpp@{teste\+Jogo.\+cpp}}
+\subsubsection{\texorpdfstring{T\+E\+S\+T\+\_\+\+C\+A\+S\+E()}{TEST\_CASE()}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}Testa o jogo\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+24                               \{
+25     \hyperlink{structtree}{Arvore} * a;
+26     REQUIRE(a= \hyperlink{cabecalho_8h_ab265aff45a8223e8f902ab3d30d21bd2}{iniciarArvore}() !=NULL);
+27     REQUIRE(\hyperlink{cabecalho_8h_ad7fd104dae4c5632636ee639f8833351}{salvarArvore}(a) !=NULL);
+28     REQUIRE(\hyperlink{cabecalho_8h_a458c8696d1dffab882b4656e85e4c27e}{iniciarJogo}(a) != NULL);
+29     REQUIRE(\hyperlink{arvore_8h_a154732de0b2f6e65ddcd1a34efa4a027}{menuJogo}() == 0);
+30 
+31 \}
+\end{DoxyCode}

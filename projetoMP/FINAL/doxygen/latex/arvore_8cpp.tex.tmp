@@ -1,0 +1,235 @@
+\hypertarget{arvore_8cpp}{}\section{Referência ao ficheiro arvore.\+cpp}
+\label{arvore_8cpp}\index{arvore.\+cpp@{arvore.\+cpp}}
+{\ttfamily \#include \char`\"{}cabecalho.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../lib/catch.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}arvore.\+h\char`\"{}}\newline
+Diagrama de dependências de inclusão para arvore.\+cpp\+:
+% FIG 0
+\subsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{cabecalho_8h_a33c9263539d0cafd737eade54ba6d6ed}{Arvore} $\ast$ \hyperlink{arvore_8cpp_a1e488a964749b5d848abf0d1bfbd0427}{tree\+Vazia} ()
+\item 
+\hyperlink{cabecalho_8h_a33c9263539d0cafd737eade54ba6d6ed}{Arvore} $\ast$ \hyperlink{arvore_8cpp_a2021f7adc04c5fe4cf9e90b211f8d28d}{insere} (\hyperlink{cabecalho_8h_a33c9263539d0cafd737eade54ba6d6ed}{Arvore} $\ast$a, char $\ast$palavra)
+\item 
+\hyperlink{cabecalho_8h_a33c9263539d0cafd737eade54ba6d6ed}{Arvore} $\ast$ \hyperlink{arvore_8cpp_ae38aad8f5458b7f9747addbbcc270cfa}{excluir} (\hyperlink{cabecalho_8h_a33c9263539d0cafd737eade54ba6d6ed}{Arvore} $\ast$a, char $\ast$valor)
+\item 
+\hyperlink{cabecalho_8h_a33c9263539d0cafd737eade54ba6d6ed}{Arvore} $\ast$ \hyperlink{arvore_8cpp_a0d448d5dd01cd251c9ebb9b1eef12564}{libera} (\hyperlink{cabecalho_8h_a33c9263539d0cafd737eade54ba6d6ed}{Arvore} $\ast$a)
+\item 
+int \hyperlink{arvore_8cpp_ac6bb8a4fc7472c16f5f758a7f7425f68}{altura} (\hyperlink{cabecalho_8h_a33c9263539d0cafd737eade54ba6d6ed}{Arvore} $\ast$a)
+\item 
+int \hyperlink{arvore_8cpp_af082905f7eac6d03e92015146bbc1925}{max} (int a, int b)
+\item 
+void \hyperlink{arvore_8cpp_adcbed2b64eec6183a1fc2c4850467b58}{pre\+Ordem} (\hyperlink{cabecalho_8h_a33c9263539d0cafd737eade54ba6d6ed}{Arvore} $\ast$a)
+\item 
+void \hyperlink{arvore_8cpp_aa32120be50528a44bc8e5216c1092c95}{in\+Ordem} (\hyperlink{cabecalho_8h_a33c9263539d0cafd737eade54ba6d6ed}{Arvore} $\ast$a)
+\item 
+void \hyperlink{arvore_8cpp_a115fd49e465c90f4c845391f220bba62}{pos\+Ordem} (\hyperlink{cabecalho_8h_a33c9263539d0cafd737eade54ba6d6ed}{Arvore} $\ast$a)
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentação das funções}
+\mbox{\Hypertarget{arvore_8cpp_ac6bb8a4fc7472c16f5f758a7f7425f68}\label{arvore_8cpp_ac6bb8a4fc7472c16f5f758a7f7425f68}} 
+\index{arvore.\+cpp@{arvore.\+cpp}!altura@{altura}}
+\index{altura@{altura}!arvore.\+cpp@{arvore.\+cpp}}
+\subsubsection{\texorpdfstring{altura()}{altura()}}
+{\footnotesize\ttfamily int altura (\begin{DoxyParamCaption}\item[{\hyperlink{cabecalho_8h_a33c9263539d0cafd737eade54ba6d6ed}{Arvore} $\ast$}]{a }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+92                        \{
+93     \textcolor{keywordflow}{if} (a == NULL) \{
+94         \textcolor{keywordflow}{return} -1;
+95 
+96     \} \textcolor{keywordflow}{else} \{
+97         \textcolor{keywordflow}{return} 1 + \hyperlink{arvore_8cpp_af082905f7eac6d03e92015146bbc1925}{max}(\hyperlink{arvore_8cpp_ac6bb8a4fc7472c16f5f758a7f7425f68}{altura}(a->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq}), \hyperlink{arvore_8cpp_ac6bb8a4fc7472c16f5f758a7f7425f68}{altura}(a->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir}));
+98     \}
+99 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{arvore_8cpp_ae38aad8f5458b7f9747addbbcc270cfa}\label{arvore_8cpp_ae38aad8f5458b7f9747addbbcc270cfa}} 
+\index{arvore.\+cpp@{arvore.\+cpp}!excluir@{excluir}}
+\index{excluir@{excluir}!arvore.\+cpp@{arvore.\+cpp}}
+\subsubsection{\texorpdfstring{excluir()}{excluir()}}
+{\footnotesize\ttfamily \hyperlink{cabecalho_8h_a33c9263539d0cafd737eade54ba6d6ed}{Arvore}$\ast$ excluir (\begin{DoxyParamCaption}\item[{\hyperlink{cabecalho_8h_a33c9263539d0cafd737eade54ba6d6ed}{Arvore} $\ast$}]{a,  }\item[{char $\ast$}]{valor }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+42                                            \{
+43     \textcolor{keywordflow}{if} (a == NULL) \{ \textcolor{comment}{//vazia}
+44         \textcolor{keywordflow}{return} NULL;
+45     \} \textcolor{keywordflow}{else} \{
+46         \textcolor{keywordflow}{if} (a->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} != NULL) \{ \textcolor{comment}{//exclui sae}
+47             a->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = \hyperlink{arvore_8cpp_ae38aad8f5458b7f9747addbbcc270cfa}{excluir}(a->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq}, \hyperlink{structtree_ab2137451cda4f3a42fb8de7085c1992c}{valor});
+48         \} \textcolor{keywordflow}{else} \{
+49             \textcolor{keywordflow}{if} (a->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} != NULL) \{ \textcolor{comment}{// exclui sad}
+50                 a->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = \hyperlink{arvore_8cpp_ae38aad8f5458b7f9747addbbcc270cfa}{excluir}(a->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir}, \hyperlink{structtree_ab2137451cda4f3a42fb8de7085c1992c}{valor});
+51             \} \textcolor{keywordflow}{else} \{
+52                 \textcolor{keywordflow}{if} (a->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} == NULL && a->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} == NULL) \{ \textcolor{comment}{//não tem filhos }
+53                     free(a);
+54                     \textcolor{keywordflow}{return} NULL;
+55                 \} \textcolor{keywordflow}{else} \{
+56                     \textcolor{keywordflow}{if} (a->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} == NULL) \{ \textcolor{comment}{//não tem filho na direita}
+57                         \hyperlink{structtree}{Arvore} * aux = a;
+58                         a = a->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq}; \textcolor{comment}{//ve se tem na esquerda}
+59                         free(aux);
+60                     \} \textcolor{keywordflow}{else} \{
+61                         \textcolor{keywordflow}{if} (a->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} == NULL) \{ \textcolor{comment}{//não tem filho na esquerda}
+62                             \hyperlink{structtree}{Arvore} * aux = a;
+63                             a = a->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir}; \textcolor{comment}{//ve se tem na direita}
+64                             free(aux);
+65                         \} \textcolor{keywordflow}{else} \{ \textcolor{comment}{//arvore tem dois filhos}
+66                             \hyperlink{structtree}{Arvore} * temp = a->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq};
+67                             \textcolor{keywordflow}{while} (temp->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} != NULL) \{
+68                                 temp = temp->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir};
+69                             \}
+70                             \textcolor{comment}{//                            a->info = temp->info;}
+71 
+72                             strcpy(\hyperlink{structtree_ab2137451cda4f3a42fb8de7085c1992c}{valor}, temp->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info});
+73                             a->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = \hyperlink{arvore_8cpp_ae38aad8f5458b7f9747addbbcc270cfa}{excluir}(a->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq}, \hyperlink{structtree_ab2137451cda4f3a42fb8de7085c1992c}{valor});
+74                         \}
+75                     \}
+76                 \}
+77             \}
+78         \}
+79     \}
+80     \textcolor{keywordflow}{return} a;
+81 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{arvore_8cpp_aa32120be50528a44bc8e5216c1092c95}\label{arvore_8cpp_aa32120be50528a44bc8e5216c1092c95}} 
+\index{arvore.\+cpp@{arvore.\+cpp}!in\+Ordem@{in\+Ordem}}
+\index{in\+Ordem@{in\+Ordem}!arvore.\+cpp@{arvore.\+cpp}}
+\subsubsection{\texorpdfstring{in\+Ordem()}{inOrdem()}}
+{\footnotesize\ttfamily void in\+Ordem (\begin{DoxyParamCaption}\item[{\hyperlink{cabecalho_8h_a33c9263539d0cafd737eade54ba6d6ed}{Arvore} $\ast$}]{a }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+121                         \{
+122     \textcolor{keywordflow}{if}(a==NULL)\{
+123         printf(\textcolor{stringliteral}{"<>"});
+124     \}
+125     \textcolor{keywordflow}{if} (a != NULL) \{
+126 
+127         \hyperlink{arvore_8cpp_aa32120be50528a44bc8e5216c1092c95}{inOrdem}(a->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq});
+128         printf(\textcolor{stringliteral}{"<%s"}, a->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info});
+129         \hyperlink{arvore_8cpp_aa32120be50528a44bc8e5216c1092c95}{inOrdem}(a->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir});
+130         printf(\textcolor{stringliteral}{">"});
+131     \}
+132 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{arvore_8cpp_a2021f7adc04c5fe4cf9e90b211f8d28d}\label{arvore_8cpp_a2021f7adc04c5fe4cf9e90b211f8d28d}} 
+\index{arvore.\+cpp@{arvore.\+cpp}!insere@{insere}}
+\index{insere@{insere}!arvore.\+cpp@{arvore.\+cpp}}
+\subsubsection{\texorpdfstring{insere()}{insere()}}
+{\footnotesize\ttfamily \hyperlink{cabecalho_8h_a33c9263539d0cafd737eade54ba6d6ed}{Arvore}$\ast$ insere (\begin{DoxyParamCaption}\item[{\hyperlink{cabecalho_8h_a33c9263539d0cafd737eade54ba6d6ed}{Arvore} $\ast$}]{a,  }\item[{char $\ast$}]{palavra }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+24                                             \{
+25     \textcolor{keywordflow}{if} (a == NULL) \{
+26         a = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+27         strcpy(a->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, palavra);
+28         a->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = NULL;
+29         a->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = NULL;
+30     \} \textcolor{keywordflow}{else} \{
+31         \textcolor{keywordflow}{if} ( a->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq}!=NULL) \{
+32 
+33             a->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = \hyperlink{arvore_8cpp_a2021f7adc04c5fe4cf9e90b211f8d28d}{insere}(a->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq}, palavra);
+34         \} \textcolor{keywordflow}{else} \{
+35 
+36             a->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = \hyperlink{arvore_8cpp_a2021f7adc04c5fe4cf9e90b211f8d28d}{insere}(a->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir}, palavra);
+37         \}
+38     \}
+39     \textcolor{keywordflow}{return} a;
+40 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{arvore_8cpp_a0d448d5dd01cd251c9ebb9b1eef12564}\label{arvore_8cpp_a0d448d5dd01cd251c9ebb9b1eef12564}} 
+\index{arvore.\+cpp@{arvore.\+cpp}!libera@{libera}}
+\index{libera@{libera}!arvore.\+cpp@{arvore.\+cpp}}
+\subsubsection{\texorpdfstring{libera()}{libera()}}
+{\footnotesize\ttfamily \hyperlink{cabecalho_8h_a33c9263539d0cafd737eade54ba6d6ed}{Arvore}$\ast$ libera (\begin{DoxyParamCaption}\item[{\hyperlink{cabecalho_8h_a33c9263539d0cafd737eade54ba6d6ed}{Arvore} $\ast$}]{a }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+83                            \{
+84     \textcolor{keywordflow}{if} (a == NULL) \{
+85         \hyperlink{arvore_8cpp_a0d448d5dd01cd251c9ebb9b1eef12564}{libera}(a->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq});
+86         \hyperlink{arvore_8cpp_a0d448d5dd01cd251c9ebb9b1eef12564}{libera}(a->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir});
+87         free(a);
+88     \}
+89     \textcolor{keywordflow}{return} NULL;
+90 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{arvore_8cpp_af082905f7eac6d03e92015146bbc1925}\label{arvore_8cpp_af082905f7eac6d03e92015146bbc1925}} 
+\index{arvore.\+cpp@{arvore.\+cpp}!max@{max}}
+\index{max@{max}!arvore.\+cpp@{arvore.\+cpp}}
+\subsubsection{\texorpdfstring{max()}{max()}}
+{\footnotesize\ttfamily int max (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+101                       \{
+102     \textcolor{keywordflow}{if} (a < b) \{
+103         \textcolor{keywordflow}{return} b;
+104     \} \textcolor{keywordflow}{else} \{
+105         \textcolor{keywordflow}{return} a;
+106     \}
+107 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{arvore_8cpp_a115fd49e465c90f4c845391f220bba62}\label{arvore_8cpp_a115fd49e465c90f4c845391f220bba62}} 
+\index{arvore.\+cpp@{arvore.\+cpp}!pos\+Ordem@{pos\+Ordem}}
+\index{pos\+Ordem@{pos\+Ordem}!arvore.\+cpp@{arvore.\+cpp}}
+\subsubsection{\texorpdfstring{pos\+Ordem()}{posOrdem()}}
+{\footnotesize\ttfamily void pos\+Ordem (\begin{DoxyParamCaption}\item[{\hyperlink{cabecalho_8h_a33c9263539d0cafd737eade54ba6d6ed}{Arvore} $\ast$}]{a }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+134                          \{
+135     \textcolor{keywordflow}{if}(a==NULL)\{
+136         printf(\textcolor{stringliteral}{"<>"});
+137     \}
+138     \textcolor{keywordflow}{if} (a != NULL) \{
+139 
+140         \hyperlink{arvore_8cpp_a115fd49e465c90f4c845391f220bba62}{posOrdem}(a->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq});
+141         printf(\textcolor{stringliteral}{">"});
+142         \hyperlink{arvore_8cpp_a115fd49e465c90f4c845391f220bba62}{posOrdem}(a->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir});
+143         
+144         printf(\textcolor{stringliteral}{"<%s"}, a->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info});
+145     \}
+146 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{arvore_8cpp_adcbed2b64eec6183a1fc2c4850467b58}\label{arvore_8cpp_adcbed2b64eec6183a1fc2c4850467b58}} 
+\index{arvore.\+cpp@{arvore.\+cpp}!pre\+Ordem@{pre\+Ordem}}
+\index{pre\+Ordem@{pre\+Ordem}!arvore.\+cpp@{arvore.\+cpp}}
+\subsubsection{\texorpdfstring{pre\+Ordem()}{preOrdem()}}
+{\footnotesize\ttfamily void pre\+Ordem (\begin{DoxyParamCaption}\item[{\hyperlink{cabecalho_8h_a33c9263539d0cafd737eade54ba6d6ed}{Arvore} $\ast$}]{a }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+108                          \{
+109     \textcolor{keywordflow}{if}(a==NULL)\{
+110         printf(\textcolor{stringliteral}{"<>"});
+111     \}
+112     \textcolor{keywordflow}{if} (a != NULL) \{
+113         printf(\textcolor{stringliteral}{"<%s"}, a->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info});
+114         \hyperlink{arvore_8cpp_adcbed2b64eec6183a1fc2c4850467b58}{preOrdem}(a->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq});
+115 
+116         \hyperlink{arvore_8cpp_adcbed2b64eec6183a1fc2c4850467b58}{preOrdem}(a->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir});
+117         printf(\textcolor{stringliteral}{">"});
+118     \}
+119 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{arvore_8cpp_a1e488a964749b5d848abf0d1bfbd0427}\label{arvore_8cpp_a1e488a964749b5d848abf0d1bfbd0427}} 
+\index{arvore.\+cpp@{arvore.\+cpp}!tree\+Vazia@{tree\+Vazia}}
+\index{tree\+Vazia@{tree\+Vazia}!arvore.\+cpp@{arvore.\+cpp}}
+\subsubsection{\texorpdfstring{tree\+Vazia()}{treeVazia()}}
+{\footnotesize\ttfamily \hyperlink{cabecalho_8h_a33c9263539d0cafd737eade54ba6d6ed}{Arvore}$\ast$ tree\+Vazia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+10                      \{
+11     \textcolor{keywordflow}{return} NULL;
+12 \}
+\end{DoxyCode}

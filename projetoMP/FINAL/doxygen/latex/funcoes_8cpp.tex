@@ -1,0 +1,430 @@
+\hypertarget{funcoes_8cpp}{}\section{Referência ao ficheiro funcoes.\+cpp}
+\label{funcoes_8cpp}\index{funcoes.\+cpp@{funcoes.\+cpp}}
+{\ttfamily \#include \char`\"{}cabecalho.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+Diagrama de dependências de inclusão para funcoes.\+cpp\+:
+% FIG 0
+\subsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{cabecalho_8h_a33c9263539d0cafd737eade54ba6d6ed}{Arvore} $\ast$ \hyperlink{funcoes_8cpp_aeb36377a497066501bbcc6a97a736c09}{iniciar\+Arvore} ()
+\item 
+\hyperlink{cabecalho_8h_a33c9263539d0cafd737eade54ba6d6ed}{Arvore} $\ast$ \hyperlink{funcoes_8cpp_aa3c3430baa283b012b264551a41e9872}{salvar\+Arvore} (\hyperlink{cabecalho_8h_a33c9263539d0cafd737eade54ba6d6ed}{Arvore} $\ast$\hyperlink{structtree}{tree})
+\item 
+void \hyperlink{funcoes_8cpp_a154732de0b2f6e65ddcd1a34efa4a027}{menu\+Jogo} ()
+\item 
+\hyperlink{cabecalho_8h_a33c9263539d0cafd737eade54ba6d6ed}{Arvore} $\ast$ \hyperlink{funcoes_8cpp_aa298d891844b52c8d87c7e69b2c2943b}{iniciar\+Jogo} (\hyperlink{cabecalho_8h_a33c9263539d0cafd737eade54ba6d6ed}{Arvore} $\ast$\hyperlink{structtree}{tree})
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentação das funções}
+\mbox{\Hypertarget{funcoes_8cpp_aeb36377a497066501bbcc6a97a736c09}\label{funcoes_8cpp_aeb36377a497066501bbcc6a97a736c09}} 
+\index{funcoes.\+cpp@{funcoes.\+cpp}!iniciar\+Arvore@{iniciar\+Arvore}}
+\index{iniciar\+Arvore@{iniciar\+Arvore}!funcoes.\+cpp@{funcoes.\+cpp}}
+\subsubsection{\texorpdfstring{iniciar\+Arvore()}{iniciarArvore()}}
+{\footnotesize\ttfamily \hyperlink{cabecalho_8h_a33c9263539d0cafd737eade54ba6d6ed}{Arvore}$\ast$ iniciar\+Arvore (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+15                          \{
+16   FILE * principal;
+17   \textcolor{keywordtype}{int} cont = 0;
+18   \textcolor{keywordtype}{char} palavra[100] [255];
+19 
+20   \hyperlink{structtree}{Arvore} * A1 = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+21   \hyperlink{structtree}{Arvore} * A2 = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+22   \hyperlink{structtree}{Arvore} * A3 = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+23   \hyperlink{structtree}{Arvore} * A4 = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+24   \hyperlink{structtree}{Arvore} * A5 = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+25   \hyperlink{structtree}{Arvore} * A6 = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+26   \hyperlink{structtree}{Arvore} * A7 = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+27   \hyperlink{structtree}{Arvore} * A8 = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+28   \hyperlink{structtree}{Arvore} * A9 = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+29   \hyperlink{structtree}{Arvore} * A10 = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+30   \hyperlink{structtree}{Arvore} * A11 = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+31   \hyperlink{structtree}{Arvore} * A12 = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+32   \hyperlink{structtree}{Arvore} * A13 = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+33   \hyperlink{structtree}{Arvore} * A14 = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+34   \hyperlink{structtree}{Arvore} * A15 = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+35   \hyperlink{structtree}{Arvore} * A16 = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+36   \hyperlink{structtree}{Arvore} * A17 = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+37   \hyperlink{structtree}{Arvore} * A18 = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+38   \hyperlink{structtree}{Arvore} * A19 = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+39   \hyperlink{structtree}{Arvore} * A20 = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+40   \hyperlink{structtree}{Arvore} * A21 = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+41   \hyperlink{structtree}{Arvore} * A22 = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+42   \hyperlink{structtree}{Arvore} * A23 = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+43   \hyperlink{structtree}{Arvore} * A24 = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+44   \hyperlink{structtree}{Arvore} * A25 = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+45   \hyperlink{structtree}{Arvore} * A26 = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+46   \hyperlink{structtree}{Arvore} * A27 = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+47   \hyperlink{structtree}{Arvore} * A28 = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+48   \hyperlink{structtree}{Arvore} * A29 = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+49   \hyperlink{structtree}{Arvore} * A30 = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+50   \hyperlink{structtree}{Arvore} * A31 = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+51   \hyperlink{structtree}{Arvore} * A32 = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+52   \hyperlink{structtree}{Arvore} * A33 = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+53   \textcolor{keywordflow}{if} ((principal = fopen(\textcolor{stringliteral}{"entrada.txt"}, \textcolor{stringliteral}{"rt"})) == NULL) \{
+54     printf(\textcolor{stringliteral}{"Deu erro"});
+55   \}
+56 
+57   \textcolor{keywordflow}{while} (fgets(palavra[cont], 255, principal) != NULL) \{
+58     cont++;
+59 
+60   \}
+61   fclose(principal);
+62   strncpy(A1->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, palavra[0], 255);
+63   strncpy(A2->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, palavra[1], 255);
+64   strncpy(A3->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, palavra[2], 255);
+65   strncpy(A4->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, palavra[3], 255);
+66   strncpy(A5->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, palavra[4], 255);
+67   strncpy(A6->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, palavra[5], 255);
+68   strncpy(A7->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, palavra[6], 255);
+69   strncpy(A8->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, palavra[7], 255);
+70   strncpy(A9->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, palavra[8], 255);
+71   strncpy(A10->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, palavra[9], 255);
+72   strncpy(A11->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, palavra[10], 255);
+73   strncpy(A12->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, palavra[11], 255);
+74   strncpy(A13->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, palavra[12], 255);
+75   strncpy(A14->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, palavra[13], 255);
+76   strncpy(A15->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, palavra[14], 255);
+77   strncpy(A16->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, palavra[15], 255);
+78   strncpy(A17->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, palavra[16], 255);
+79   strncpy(A18->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, palavra[17], 255);
+80   strncpy(A19->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, palavra[18], 255);
+81   strncpy(A20->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, palavra[19], 255);
+82   strncpy(A21->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, palavra[20], 255);
+83   strncpy(A22->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, palavra[21], 255);
+84   strncpy(A23->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, palavra[22], 255);
+85   strncpy(A24->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, palavra[23], 255);
+86   strncpy(A25->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, palavra[24], 255);
+87   strncpy(A26->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, palavra[25], 255);
+88   strncpy(A27->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, palavra[26], 255);
+89   strncpy(A28->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, palavra[27], 255);
+90   strncpy(A29->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, palavra[28], 255);
+91   strncpy(A30->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, palavra[29], 255);
+92   strncpy(A31->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, palavra[30], 255);
+93   strncpy(A32->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, palavra[29], 255);
+94   strncpy(A33->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, palavra[30], 255);
+95 
+96   A1->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = A2;
+97   A1->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = A3;
+98   A2->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = A4;
+99   A2->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = A5;
+100   A3->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = A6;
+101   A3->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = A7;
+102   A4->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = A8;
+103   A4->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = A9;
+104   A5->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = A10;
+105   A6->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = A12;
+106   A5->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = A11;
+107   A6->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = A13;
+108   A7->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = A15;
+109   A7->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = A14;
+110   A8->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = A16;
+111   A8->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = A17;
+112   A9->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = A18;
+113   A9->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = A19;
+114   A10->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = A20;
+115   A10->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = A21;
+116   A11->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = A22;
+117   A11->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = A23;
+118   A12->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = A24;
+119   A12->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = A25;
+120   A13->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = A26;
+121   A13->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = A27;
+122   A14->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = A28;
+123   A14->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = A29;
+124   A15->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = A30;
+125   A15->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = A31;
+126   A16->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = A32;
+127   A16->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = A33;
+128 
+129 
+130   A17->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = NULL;
+131   A17->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = NULL;
+132   A18->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = NULL;
+133   A18->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = NULL;
+134   A19->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = NULL;
+135   A19->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = NULL;
+136   A20->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = NULL;
+137   A20->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = NULL;
+138   A21->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = NULL;
+139   A21->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = NULL;
+140   A22->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = NULL;
+141   A22->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = NULL;
+142   A23->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = NULL;
+143   A23->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = NULL;
+144   A24->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = NULL;
+145   A24->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = NULL;
+146   A25->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = NULL;
+147   A25->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = NULL;
+148   A26->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = NULL;
+149   A26->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = NULL;
+150   A27->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = NULL;
+151   A27->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = NULL;
+152   A28->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = NULL;
+153   A28->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = NULL;
+154   A29->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = NULL;
+155   A29->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = NULL;
+156   A30->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = NULL;
+157   A30->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = NULL;
+158   A31->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = NULL;
+159   A31->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = NULL;
+160   A32->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = NULL;
+161   A32->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = NULL;
+162   A33->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = NULL;
+163   A33->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = NULL;
+164 
+165 
+166 
+167 
+168 
+169 
+170 
+171   \textcolor{keywordflow}{return} A1;
+172 
+173 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{funcoes_8cpp_aa298d891844b52c8d87c7e69b2c2943b}\label{funcoes_8cpp_aa298d891844b52c8d87c7e69b2c2943b}} 
+\index{funcoes.\+cpp@{funcoes.\+cpp}!iniciar\+Jogo@{iniciar\+Jogo}}
+\index{iniciar\+Jogo@{iniciar\+Jogo}!funcoes.\+cpp@{funcoes.\+cpp}}
+\subsubsection{\texorpdfstring{iniciar\+Jogo()}{iniciarJogo()}}
+{\footnotesize\ttfamily \hyperlink{cabecalho_8h_a33c9263539d0cafd737eade54ba6d6ed}{Arvore}$\ast$ iniciar\+Jogo (\begin{DoxyParamCaption}\item[{\hyperlink{cabecalho_8h_a33c9263539d0cafd737eade54ba6d6ed}{Arvore} $\ast$}]{tree }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+256                                     \{
+257   fflush(stdout);
+258   printf(\textcolor{stringliteral}{"Digite y para sim e n para nao: \(\backslash\)n"});
+259   fflush(stdout);
+260   \textcolor{keywordtype}{char} resposta;
+261   \textcolor{keywordtype}{char} perguntaatual[255];
+262   \textcolor{keywordtype}{char} novaper [255];
+263   \textcolor{keywordtype}{char} novarenao [255];
+264   \textcolor{keywordtype}{char} novaresim [255];
+265   \textcolor{keywordtype}{char} respostapergunta;
+266   \hyperlink{structtree}{Arvore} * raizfinal = tree;
+267   \hyperlink{structtree}{Arvore} * topo = tree;
+268   \textcolor{keywordtype}{int} termina = 0;
+269   \textcolor{keywordflow}{if} (tree == NULL) \{
+270     printf(\textcolor{stringliteral}{"Jogo Vaziou"});
+271 
+272 
+273   \} \textcolor{keywordflow}{else} \{
+274 
+275 
+276     \textcolor{keywordflow}{do} \{
+277       printf(\textcolor{stringliteral}{"%s"}, tree->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info});
+278       fflush(stdout);
+279       setbuf(stdin, NULL);
+280       scanf(\textcolor{stringliteral}{" %c"}, &resposta);
+281       setbuf(stdin, NULL);
+282 
+283       printf(\textcolor{stringliteral}{"\(\backslash\)nA pergunta faz sentido y para sim e n para nao\(\backslash\)n"});
+284       setbuf(stdin, NULL);
+285       scanf(\textcolor{stringliteral}{"%c"},&respostapergunta);
+286       setbuf(stdin, NULL);
+287       \textcolor{keywordflow}{if}(respostapergunta==\textcolor{charliteral}{'n'})\{
+288         printf(\textcolor{stringliteral}{"Escreva uma pergunta para colocar no lugar"});
+289         scanf(\textcolor{stringliteral}{"%c"},&novaper);
+290         strncpy(tree->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, novaper,255);
+291         
+292       \}
+293 
+294       \textcolor{keywordflow}{if} (resposta == \textcolor{charliteral}{'y'}) \{
+295 
+296 
+297         \textcolor{keywordflow}{if} (tree->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} == NULL && tree->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} == NULL) \{
+298           strncpy(perguntaatual, tree->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, 255);
+299 
+300           printf(\textcolor{stringliteral}{"se a resposta for %s digite y se nao for digite n: \(\backslash\)n"}, tree->
+      \hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info});
+301           fflush(stdout);
+302           setbuf(stdin, NULL);
+303           scanf(\textcolor{stringliteral}{" %c"}, &resposta);
+304           setbuf(stdin, NULL);
+305           \textcolor{keywordflow}{if} (resposta == \textcolor{charliteral}{'y'} && tree->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} == NULL && tree->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} == NULL) \{
+306             printf(\textcolor{stringliteral}{"Sucesso eu acertei"});
+307             fflush(stdout);
+308             \textcolor{keywordflow}{return} raizfinal;
+309 
+310           \}
+311 
+312         \}
+313         tree = tree->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq};
+314       \}
+315 
+316 
+317 
+318       \textcolor{keywordflow}{if} (resposta == \textcolor{charliteral}{'n'}) \{
+319         \textcolor{keywordflow}{if} (tree->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} == NULL && tree->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} == NULL) \{
+320           strcpy(perguntaatual, tree->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info});
+321           printf(\textcolor{stringliteral}{"se a resposta for %s digite y se nao for digite n: \(\backslash\)n"}, tree->
+      \hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info});
+322           setbuf(stdin, NULL);
+323           scanf(\textcolor{stringliteral}{" %c"}, &resposta);
+324           setbuf(stdin, NULL);
+325           \textcolor{keywordflow}{if} (resposta == \textcolor{charliteral}{'y'} && tree->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} == NULL && tree->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} == NULL) \{
+326             printf(\textcolor{stringliteral}{"Sucesso eu acertei"});
+327             \textcolor{keywordflow}{return} raizfinal;
+328 
+329           \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (resposta == \textcolor{charliteral}{'n'} && tree->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} == NULL && tree->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} == NULL) \{
+330             printf(\textcolor{stringliteral}{"Digite uma pergunta que diferencie o que tu estava pensando e duas respostas uma para
+       caso sim e outra para caso nao respectivamente: "});
+331             setbuf(stdin, NULL);
+332             scanf(\textcolor{stringliteral}{"%s"}, novaper);
+333             setbuf(stdin, NULL);
+334 
+335             scanf(\textcolor{stringliteral}{" %s"}, novaresim);
+336             setbuf(stdin, NULL);
+337 
+338             scanf(\textcolor{stringliteral}{" %s"}, novarenao);
+339 
+340 
+341             strcpy(tree->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, novaper);
+342 
+343 
+344             \hyperlink{structtree}{Arvore} * a = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+345 
+346             tree->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = a;
+347             strcpy(a->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, novaresim);
+348 
+349             a->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = NULL;
+350             a->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = NULL;
+351 
+352 
+353             \hyperlink{structtree}{Arvore} * b = (\hyperlink{structtree}{Arvore} *) malloc(\textcolor{keyword}{sizeof} (\hyperlink{structtree}{Arvore}));
+354 
+355 
+356             tree->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = b;
+357             strcpy(b->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, novarenao);
+358 
+359             b->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} = NULL;
+360             b->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} = NULL;
+361             \textcolor{keywordflow}{return} raizfinal;
+362 
+363           \}
+364         \}
+365         \textcolor{keywordflow}{if} (resposta = \textcolor{charliteral}{'n'} && tree->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir} == NULL && tree->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq} == NULL) \{
+366           printf(\textcolor{stringliteral}{"\(\backslash\)n A resposta não esta no banco"});
+367 
+368           printf(\textcolor{stringliteral}{"Digite uma pergunta que diferencie o que tu estava pensando e duas respostas uma para
+       caso sim e outra para caso nao respectivamente: "});
+369 
+370           scanf(\textcolor{stringliteral}{"%s"}, novaper);
+371           fflush(stdout);
+372           scanf(\textcolor{stringliteral}{" %s"}, novaresim);
+373           fflush(stdout);
+374           scanf(\textcolor{stringliteral}{" %s"}, novarenao);
+375         \} \textcolor{keywordflow}{else} \{
+376           tree = tree->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir};
+377         \}
+378 
+379       \}
+380 
+381 
+382 
+383 
+384 
+385 
+386 
+387     \} \textcolor{keywordflow}{while} (termina != 1);
+388 
+389 
+390 
+391   \}
+392   \textcolor{keywordflow}{return} topo;
+393 
+394 
+395 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{funcoes_8cpp_a154732de0b2f6e65ddcd1a34efa4a027}\label{funcoes_8cpp_a154732de0b2f6e65ddcd1a34efa4a027}} 
+\index{funcoes.\+cpp@{funcoes.\+cpp}!menu\+Jogo@{menu\+Jogo}}
+\index{menu\+Jogo@{menu\+Jogo}!funcoes.\+cpp@{funcoes.\+cpp}}
+\subsubsection{\texorpdfstring{menu\+Jogo()}{menuJogo()}}
+{\footnotesize\ttfamily void menu\+Jogo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+205                 \{
+206   \hyperlink{structtree}{Arvore} * \hyperlink{structtree}{tree};
+207   \textcolor{keywordtype}{int} opcao;
+208   FILE * principal;
+209   tree = \hyperlink{funcoes_8cpp_aeb36377a497066501bbcc6a97a736c09}{iniciarArvore}();
+210   printf(\textcolor{stringliteral}{"Portinho e MiniMarina Productions EC e nois 2018.\(\backslash\)n"});
+211   \textcolor{keywordflow}{do} \{
+212     fflush(stdout);
+213     printf(\textcolor{stringliteral}{"\(\backslash\)nMenu:\(\backslash\)n 1-Começar jogo \(\backslash\)n 2-Salvar Jogo em arquivo\(\backslash\)n 3-Sair\(\backslash\)n Opcao: "});
+214     fflush(stdout);
+215     setbuf(stdin, NULL);
+216     scanf(\textcolor{stringliteral}{"%i"}, &opcao);
+217     setbuf(stdin, NULL);
+218     \textcolor{keywordflow}{switch} (opcao) \{
+219       \textcolor{keywordflow}{case} 1:
+220       \{
+221         tree = \hyperlink{funcoes_8cpp_aa298d891844b52c8d87c7e69b2c2943b}{iniciarJogo}(tree);
+222 
+223         \textcolor{keywordflow}{break};
+224       \}
+225       \textcolor{keywordflow}{case} 2:
+226       \{
+227         \textcolor{keywordflow}{if} ((principal = fopen(\textcolor{stringliteral}{"entrada.txt"}, \textcolor{stringliteral}{"w"})) == NULL) \{
+228           printf(\textcolor{stringliteral}{"Deu erro"});
+229         \}
+230         fclose(principal);
+231         tree = \hyperlink{funcoes_8cpp_aa3c3430baa283b012b264551a41e9872}{salvarArvore}(tree);
+232         \textcolor{keywordflow}{break};
+233       \}
+234       \textcolor{keywordflow}{case} 3:
+235       \{
+236         printf(\textcolor{stringliteral}{"Saindo...\(\backslash\)n"});
+237         \textcolor{keywordflow}{break};
+238 
+239       \}
+240 
+241       \textcolor{keywordflow}{default}:
+242       \{
+243         printf(\textcolor{stringliteral}{"Opcao invalida!!!"});
+244         \textcolor{keywordflow}{break};
+245       \}
+246     \}
+247   \} \textcolor{keywordflow}{while} (opcao != 3);
+248 
+249 
+250 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{funcoes_8cpp_aa3c3430baa283b012b264551a41e9872}\label{funcoes_8cpp_aa3c3430baa283b012b264551a41e9872}} 
+\index{funcoes.\+cpp@{funcoes.\+cpp}!salvar\+Arvore@{salvar\+Arvore}}
+\index{salvar\+Arvore@{salvar\+Arvore}!funcoes.\+cpp@{funcoes.\+cpp}}
+\subsubsection{\texorpdfstring{salvar\+Arvore()}{salvarArvore()}}
+{\footnotesize\ttfamily \hyperlink{cabecalho_8h_a33c9263539d0cafd737eade54ba6d6ed}{Arvore}$\ast$ salvar\+Arvore (\begin{DoxyParamCaption}\item[{\hyperlink{cabecalho_8h_a33c9263539d0cafd737eade54ba6d6ed}{Arvore} $\ast$}]{tree }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+178                                      \{
+179   FILE * principal;
+180 
+181 
+182   \textcolor{keywordflow}{if} ((principal = fopen(\textcolor{stringliteral}{"entrada.txt"}, \textcolor{stringliteral}{"a"})) == NULL) \{
+183     printf(\textcolor{stringliteral}{"Deu erro"});
+184   \}
+185 
+186 
+187   \textcolor{keywordflow}{if} (tree == NULL) \{
+188 
+189   \}
+190   \textcolor{keywordflow}{if} (tree != NULL) \{
+191     fprintf(principal, tree->\hyperlink{structtree_a33363586fc94b74ed916c1a047b40c09}{info}, 255);
+192     \hyperlink{funcoes_8cpp_aa3c3430baa283b012b264551a41e9872}{salvarArvore}(tree->\hyperlink{structtree_aed1a08ff52888fc196c29399e9f0f7e9}{esq});
+193 
+194     \hyperlink{funcoes_8cpp_aa3c3430baa283b012b264551a41e9872}{salvarArvore}(tree->\hyperlink{structtree_a7e8772c10923b3b7abbe1bcf69605857}{dir});
+195 
+196   \}
+197 
+198   fclose(principal);
+199   \textcolor{keywordflow}{return} tree;
+200 \}
+\end{DoxyCode}

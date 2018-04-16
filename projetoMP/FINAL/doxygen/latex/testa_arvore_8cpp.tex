@@ -1,0 +1,49 @@
+\hypertarget{testa_arvore_8cpp}{}\section{Referência ao ficheiro testa\+Arvore.\+cpp}
+\label{testa_arvore_8cpp}\index{testa\+Arvore.\+cpp@{testa\+Arvore.\+cpp}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}arvore.\+h\char`\"{}}\newline
+Diagrama de dependências de inclusão para testa\+Arvore.\+cpp\+:
+% FIG 0
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{testa_arvore_8cpp_a656eb5868e824d59f489f910db438420}{C\+A\+T\+C\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+M\+A\+IN}
+\end{DoxyCompactItemize}
+\subsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{testa_arvore_8cpp_a2a49339ba2ec897c4883cf4fb299580a}{T\+E\+S\+T\+\_\+\+C\+A\+SE} (\char`\"{}Testa a arvore\char`\"{}, \char`\"{}\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentação das macros}
+\mbox{\Hypertarget{testa_arvore_8cpp_a656eb5868e824d59f489f910db438420}\label{testa_arvore_8cpp_a656eb5868e824d59f489f910db438420}} 
+\index{testa\+Arvore.\+cpp@{testa\+Arvore.\+cpp}!C\+A\+T\+C\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+M\+A\+IN@{C\+A\+T\+C\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+M\+A\+IN}}
+\index{C\+A\+T\+C\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+M\+A\+IN@{C\+A\+T\+C\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+M\+A\+IN}!testa\+Arvore.\+cpp@{testa\+Arvore.\+cpp}}
+\subsubsection{\texorpdfstring{C\+A\+T\+C\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+M\+A\+IN}{CATCH\_CONFIG\_MAIN}}
+{\footnotesize\ttfamily \#define C\+A\+T\+C\+H\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+M\+A\+IN}
+
+
+
+\subsection{Documentação das funções}
+\mbox{\Hypertarget{testa_arvore_8cpp_a2a49339ba2ec897c4883cf4fb299580a}\label{testa_arvore_8cpp_a2a49339ba2ec897c4883cf4fb299580a}} 
+\index{testa\+Arvore.\+cpp@{testa\+Arvore.\+cpp}!T\+E\+S\+T\+\_\+\+C\+A\+SE@{T\+E\+S\+T\+\_\+\+C\+A\+SE}}
+\index{T\+E\+S\+T\+\_\+\+C\+A\+SE@{T\+E\+S\+T\+\_\+\+C\+A\+SE}!testa\+Arvore.\+cpp@{testa\+Arvore.\+cpp}}
+\subsubsection{\texorpdfstring{T\+E\+S\+T\+\_\+\+C\+A\+S\+E()}{TEST\_CASE()}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}Testa a arvore\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+22                                 \{
+23     \textcolor{keywordtype}{char} * palavra[255]=\textcolor{stringliteral}{"teste"};
+24     REQUIRE(\hyperlink{structtree}{Arvore} * a = \hyperlink{arvore_8cpp_a1e488a964749b5d848abf0d1bfbd0427}{treeVazia}() ==NULL);
+25     REQUIRE(\hyperlink{arvore_8cpp_a2021f7adc04c5fe4cf9e90b211f8d28d}{insere}(a,palavra) !=NULL);
+26     REQUIRE(\hyperlink{arvore_8cpp_ae38aad8f5458b7f9747addbbcc270cfa}{excluir}(a,palavra) != NULL);
+27     REQUIRE(\hyperlink{arvore_8cpp_adcbed2b64eec6183a1fc2c4850467b58}{preOrdem}(a));
+28     REQUIRE(\hyperlink{arvore_8cpp_aa32120be50528a44bc8e5216c1092c95}{inOrdem}(a));
+29     REQUIRE(\hyperlink{arvore_8cpp_a115fd49e465c90f4c845391f220bba62}{posOrdem}(a));
+30     REQUIRE(\hyperlink{arvore_8cpp_a0d448d5dd01cd251c9ebb9b1eef12564}{libera}(a)==NULL);
+31 
+32 \}
+\end{DoxyCode}
