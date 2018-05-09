@@ -75,17 +75,17 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/projetomp: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/projetomp ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/arvore.o: arvore.cpp 
+${OBJECTDIR}/arvore.o: arvore.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/arvore.o arvore.cpp
 
-${OBJECTDIR}/funcoes.o: funcoes.cpp 
+${OBJECTDIR}/funcoes.o: funcoes.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/funcoes.o funcoes.cpp
 
-${OBJECTDIR}/main.o: main.cpp 
+${OBJECTDIR}/main.o: main.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
@@ -99,7 +99,7 @@ ${OBJECTDIR}/main.o: main.cpp
 
 ${TESTDIR}/TestFiles/f1: ${TESTDIR}/testaArvore.o ${TESTDIR}/tests/testeJogo.o ${OBJECTFILES:%.o=%_nomain.o}
 	${MKDIR} -p ${TESTDIR}/TestFiles
-	${LINK.cc}   -o ${TESTDIR}/TestFiles/f1 $^ ${LDLIBSOPTIONS} 
+	${LINK.cc} -o ${TESTDIR}/TestFiles/f1 $^ ${LDLIBSOPTIONS}   
 
 
 ${TESTDIR}/testaArvore.o: testaArvore.cpp 
@@ -165,7 +165,6 @@ ${OBJECTDIR}/main_nomain.o: ${OBJECTDIR}/main.o main.cpp
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/projetomp
 
 # Subprojects
 .clean-subprojects:

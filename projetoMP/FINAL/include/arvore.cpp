@@ -1,10 +1,16 @@
 
-#include "cabecalho.h"          
+#include "cabecalho.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include "../lib/catch.hpp"
 #include <string.h>
 #include "arvore.h"
+
+//Retorna um ponteiro Arvore NULL
+//Assertiva de entrada: nenhuma
+//Assertiva de saida: nenhuma
+//Requisito: nenhum
+//Hipotese: irá retornar um ponteiro NULL
 
 
 Arvore * treeVazia() {
@@ -21,7 +27,16 @@ Arvore * cria(int valor, Arvore * sae, Arvore * sad) {
 }
  */
 
+
+ //Insere um valor na arvore
+ //Assertiva de entrada: checa se o ponteiro esta NULL
+ //Assertiva de saida: nenhuma
+ //Requisito: Palavra não pode ser NULL
+ //Hipotese: irá inserir o valor e retornar o novo ponteiro da arvore
+
+
 Arvore * insere(Arvore * a, char * palavra) {
+
     if (a == NULL) {
         a = (Arvore *) malloc(sizeof (Arvore));
         strcpy(a->info, palavra);
@@ -39,6 +54,14 @@ Arvore * insere(Arvore * a, char * palavra) {
     return a;
 }
 
+
+//Exclui o ponteiro
+//Assertiva de entrada: checa se o ponteiro esta NULL
+//Assertiva de saida: nenhuma
+//Requisito: Palavra não pode ser NULL
+//Hipotese: irá inserir o valor e retornar o novo ponteiro da arvore
+
+
 Arvore * excluir(Arvore * a, char * valor) {
     if (a == NULL) { //vazia
         return NULL;
@@ -49,7 +72,7 @@ Arvore * excluir(Arvore * a, char * valor) {
             if (a->dir != NULL) { // exclui sad
                 a->dir = excluir(a->dir, valor);
             } else {
-                if (a->esq == NULL && a->dir == NULL) { //não tem filhos 
+                if (a->esq == NULL && a->dir == NULL) { //não tem filhos
                     free(a);
                     return NULL;
                 } else {
@@ -80,6 +103,13 @@ Arvore * excluir(Arvore * a, char * valor) {
     return a;
 }
 
+//Libera a arvore
+//Assertiva de entrada: Checa se o ponteiro é NULL
+//Assertiva de saida: nenhuma
+//Requisito: nenhum
+//Hipotese: recebe a raiz da arvore, visita todos os nodos e libera a arvore
+
+
 Arvore * libera(Arvore *a) {
     if (a == NULL) {
         libera(a->esq);
@@ -88,6 +118,13 @@ Arvore * libera(Arvore *a) {
     }
     return NULL;
 }
+
+
+//Retorna a altura da árvore
+//Assertiva de entrada: Checa se o ponteiro é NULL
+//Assertiva de saida: nenhuma
+//Requisito: nenhum
+//Hipotese: recebe a raiz da arvore, e percorre até o final para descobrir a altura
 
 int altura(Arvore * a) {
     if (a == NULL) {
@@ -98,13 +135,11 @@ int altura(Arvore * a) {
     }
 }
 
-int max(int a, int b) {
-    if (a < b) {
-        return b;
-    } else {
-        return a;
-    }
-}
+//Imprimi a arvore em preOrdem
+//Assertiva de entrada: Checa se o ponteiro é NULL
+//Assertiva de saida: nenhuma
+//Requisito: nenhum
+//Hipotese: recebe a raiz da arvore e imprime raiz, esquerda, direita
 void preOrdem(Arvore* a) {
     if(a==NULL){
         printf("<>");
@@ -117,7 +152,11 @@ void preOrdem(Arvore* a) {
         printf(">");
     }
 }
-
+//Imprimi a arvore em inOrdem
+//Assertiva de entrada: Checa se o ponteiro é NULL
+//Assertiva de saida: nenhuma
+//Requisito: nenhum
+//Hipotese: recebe a raiz da arvore e imprime resquerda, raiz, direita
 void inOrdem(Arvore* a) {
     if(a==NULL){
         printf("<>");
@@ -130,7 +169,11 @@ void inOrdem(Arvore* a) {
         printf(">");
     }
 }
-
+//Imprimi a arvore em posOrdem
+//Assertiva de entrada: Checa se o ponteiro é NULL
+//Assertiva de saida: nenhuma
+//Requisito: nenhum
+//Hipotese: recebe a raiz da arvore e imprime esquerda, direita, raiz
 void posOrdem(Arvore* a) {
     if(a==NULL){
         printf("<>");
@@ -140,9 +183,7 @@ void posOrdem(Arvore* a) {
         posOrdem(a->esq);
         printf(">");
         posOrdem(a->dir);
-        
+
         printf("<%s", a->info);
     }
 }
-
-
