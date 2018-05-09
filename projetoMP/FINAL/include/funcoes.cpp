@@ -187,42 +187,27 @@ Arvore * iniciarArvore() {
 
 }
 
-void checaEstrutura(Arvore * tree){
-    Arvore * treealtura = tree;
 
-    int nodos = contaArvore(tree);
 
-    int altura = altura(treealtura);
-     int valor = power(2,altura-1);
-     if(nodos==valor){
-         printf("passa no teste");
-
-     }else{
-         printf("falhou no teste" );
-     }
-
-}
-
-unsigned int contaArvore(const Arvore *tree)
+void checaArvore (Arvore * tree)
 {
-    unsigned int count = 1;
-    if (tree->esq!= NULL) {
-       count += contaArvore(root->left);
+        if (a != NULL) {
+            if(a->esq==NULL && a->dir !=NULL){
+                printf("Ta errado");
+            }
+            if(a->dir==NULL && a->esq !=NULL){
+                printf("Ta errado");
+            }
+            preOrdem(a->esq);
+
+            preOrdem(a->dir);
+
+        }
     }
-    if (root->dir != NULL) {
-        count += contaArvore(root->right);
-    }
-    return count;
 }
 
 
 
-int power(int base, unsigned int exp) {
-    int i, result = 1;
-    for (i = 0; i < exp; i++)
-        result *= base;
-    return result;
- }
 
 //salvar salva, só não salva certo.....
 

@@ -2,13 +2,13 @@
 #include "../lib/catch.hpp"
 
 struct tree {
-  
+
     struct tree * pai;
     struct tree*dir;
     struct tree * esq;
     char    info[255];
     int valor;
-    
+
 };
 typedef struct tree Arvore;
 
@@ -28,3 +28,4 @@ int altura(Arvore * a);
 int max(int a, int b);
 Arvore* busca(Arvore* a, char * valor);
 void menuJogo();
+void checaArvore (Arvore * tree);
