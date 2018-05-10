@@ -11,7 +11,8 @@
 //Assertiva de saida: nenhuma
 //Requisito: nenhum
 //Hipotese: irá retornar um ponteiro NULL
-
+//interface explicita: nenhuma
+//interface implicita: nenhuma
 
 Arvore * treeVazia() {
     return NULL;
@@ -33,7 +34,8 @@ Arvore * cria(int valor, Arvore * sae, Arvore * sad) {
  //Assertiva de saida: nenhuma
  //Requisito: Palavra não pode ser NULL
  //Hipotese: irá inserir o valor e retornar o novo ponteiro da arvore
-
+ //interface explicita: ponteiro da arvore e a palavra a ser inserida
+ //interface implicita: nenhuma
 
 Arvore * insere(Arvore * a, char * palavra) {
 
@@ -60,7 +62,8 @@ Arvore * insere(Arvore * a, char * palavra) {
 //Assertiva de saida: nenhuma
 //Requisito: Palavra não pode ser NULL
 //Hipotese: irá inserir o valor e retornar o novo ponteiro da arvore
-
+//interface explicita: ponteiro da arvore e a palavra a ser excluida
+//interface implicita: nenhuma
 
 Arvore * excluir(Arvore * a, char * valor) {
     if (a == NULL) { //vazia
@@ -108,7 +111,8 @@ Arvore * excluir(Arvore * a, char * valor) {
 //Assertiva de saida: nenhuma
 //Requisito: nenhum
 //Hipotese: recebe a raiz da arvore, visita todos os nodos e libera a arvore
-
+//interface explicita: ponteiro da arvore
+//interface implicita: nenhuma
 
 Arvore * libera(Arvore *a) {
     if (a == NULL) {
@@ -125,7 +129,8 @@ Arvore * libera(Arvore *a) {
 //Assertiva de saida: nenhuma
 //Requisito: nenhum
 //Hipotese: recebe a raiz da arvore, e percorre até o final para descobrir a altura
-
+//interface explicita: ponteiro da arvore
+//interface implicita: nenhuma
 int altura(Arvore * a) {
     if (a == NULL) {
         return -1;
@@ -140,6 +145,8 @@ int altura(Arvore * a) {
 //Assertiva de saida: nenhuma
 //Requisito: nenhum
 //Hipotese: recebe a raiz da arvore e imprime raiz, esquerda, direita
+//interface explicita: ponteiro da arvore
+//interface implicita: nenhuma
 void preOrdem(Arvore* a) {
     if(a==NULL){
         printf("<>");
@@ -157,6 +164,8 @@ void preOrdem(Arvore* a) {
 //Assertiva de saida: nenhuma
 //Requisito: nenhum
 //Hipotese: recebe a raiz da arvore e imprime resquerda, raiz, direita
+//interface explicita: ponteiro da arvore
+//interface implicita: nenhuma
 void inOrdem(Arvore* a) {
     if(a==NULL){
         printf("<>");
@@ -174,6 +183,8 @@ void inOrdem(Arvore* a) {
 //Assertiva de saida: nenhuma
 //Requisito: nenhum
 //Hipotese: recebe a raiz da arvore e imprime esquerda, direita, raiz
+//interface explicita: ponteiro da arvore
+//interface implicita: nenhuma
 void posOrdem(Arvore* a) {
     if(a==NULL){
         printf("<>");

@@ -19,12 +19,13 @@
 //Assertiva de saida: checa caso o arquivo não possa ser lido retorna um ponteiro NULL, se o ponteiro da raiz for NULL aprensenta uma mensagem
 //Requisito: não tem Requisito
 //Hipotese: irá retornar a raiz de uma arvore
-
+//interface explicita: ponteiro para a raiz da arvore
+//interface implicita: arquivo .txt
 
 Arvore * iniciarArvore() {
-    FILE * principal;
-    int cont = 0;
-    char palavra[100] [255];
+    FILE * principal; //ponteiro do arquivo
+    int cont = 0; //contador
+    char palavra[100] [255]; //vetor de palavras
 
     Arvore * A1 = (Arvore *) malloc(sizeof (Arvore));
     Arvore * A2 = (Arvore *) malloc(sizeof (Arvore));
@@ -188,7 +189,14 @@ Arvore * iniciarArvore() {
 }
 
 
-
+//Checa integridade da arvore
+//
+//Assertiva de entrada: checa se cada nodo da arvore 
+//Assertiva de saida: nenhuma
+//Requisito: o ponteiro raiz não pode ser NULL
+//Hipotese: irá salvar a arvore no arquivo
+//interface explicita: ponteiro para raiz da Arvore
+//interface implicita: nenhuma
 void checaArvore (Arvore * tree)
 {
         if (a != NULL) {
@@ -198,9 +206,9 @@ void checaArvore (Arvore * tree)
             if(a->dir==NULL && a->esq !=NULL){
                 printf("Ta errado");
             }
-            preOrdem(a->esq);
+            checaArvore(a->esq);
 
-            preOrdem(a->dir);
+            checaArvore(a->dir);
 
         }
     }
@@ -217,7 +225,8 @@ void checaArvore (Arvore * tree)
 //Assertiva de saida:
 //Requisito: o ponteiro raiz não pode ser NULL
 //Hipotese: irá salvar a arvore no arquivo
-
+//interface explicita: ponteiro para raiz da Arvore
+//interface implicita: arquivo .txt
 Arvore * salvarArvore(Arvore * tree) {
     FILE * principal;
     //assertiva nova inserida
@@ -256,6 +265,8 @@ Arvore * salvarArvore(Arvore * tree) {
 //Assertiva de saida: checa se o ponteiro
 //Requisito: o ponteiro raiz não pode ser NULL
 //Hipotese: Menu com as opções do jogo
+//interface explicita: nenhuma
+//interface implicita: arquivo .txt
 
 void menuJogo() {
     Arvore * tree;
@@ -323,7 +334,8 @@ void menuJogo() {
 //Assertiva de saida: checa se o ponteiro raiz da arvore é NULL
 //Requisito: raiz não pode ser NULL
 //Hipotese: irá executar o jogo normalmente
-
+//interface explicita: Arvore
+//interface implicita: nenhuma
 Arvore * iniciarJogo(Arvore * tree) {
     fflush(stdout);
     printf("Digite y para sim e n para nao: \n");
