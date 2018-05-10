@@ -191,7 +191,7 @@ Arvore * iniciarArvore() {
 
 //Checa integridade da arvore
 //
-//Assertiva de entrada: checa se cada nodo da arvore 
+//Assertiva de entrada: checa se cada nodo da arvore tem seus filhoss
 //Assertiva de saida: nenhuma
 //Requisito: o ponteiro raiz não pode ser NULL
 //Hipotese: irá salvar a arvore no arquivo
@@ -199,20 +199,20 @@ Arvore * iniciarArvore() {
 //interface implicita: nenhuma
 void checaArvore (Arvore * tree)
 {
-        if (a != NULL) {
-            if(a->esq==NULL && a->dir !=NULL){
+        if (tree != NULL) {
+            if(tree->esq==NULL && tree->dir !=NULL){
                 printf("Ta errado");
             }
-            if(a->dir==NULL && a->esq !=NULL){
+            if(tree->dir==NULL && tree->esq !=NULL){
                 printf("Ta errado");
             }
-            checaArvore(a->esq);
+            checaArvore(tree->esq);
 
-            checaArvore(a->dir);
+            checaArvore(tree->dir);
 
         }
     }
-}
+
 
 
 
@@ -220,7 +220,8 @@ void checaArvore (Arvore * tree)
 //salvar salva, só não salva certo.....
 
 //Recebe o ponteiro raiz da arvore
-//Caso não seja possível abrir o arquivo, alerta que aconteceu um erro
+//Caso não seja possível abrir o arquivo, alerta que aconteceu um erro, salva a arvore no arquivo txt e retorna o
+//ponteiro da Arvore
 //Assertiva de entrada: checa se o ponteiro raiz é NULL caso seja retora um ponteiro NULL e alerta
 //Assertiva de saida:
 //Requisito: o ponteiro raiz não pode ser NULL
@@ -260,7 +261,8 @@ Arvore * salvarArvore(Arvore * tree) {
 
 
 
-//Menu do jogo
+//Menu do jogo de onde todas as funções são disparadas
+//note o desfault do switch case para exceções
 //Assertiva de entrada: não tem
 //Assertiva de saida: checa se o ponteiro
 //Requisito: o ponteiro raiz não pode ser NULL

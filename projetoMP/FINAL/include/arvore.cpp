@@ -136,7 +136,7 @@ int altura(Arvore * a) {
         return -1;
 
     } else {
-        return 1 + max(altura(a->esq), altura(a->dir));
+        //return 1 + max(altura(a->esq), altura(a->dir));
     }
 }
 
